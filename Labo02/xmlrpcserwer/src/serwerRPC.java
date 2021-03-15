@@ -1,98 +1,85 @@
 import org.apache.xmlrpc.WebServer;
 
-import javax.xml.crypto.Data;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.LinkedList;
-import java.util.List;
 
 public class serwerRPC {
-    public Integer echo(int x, int y) {
-        return new Integer(x+y);
+
+    public double add(double x, double y) {
+        return x + y;
     }
 
-    public int execAsy(int x) {
-        System.out.println("... wywolano asy - odliczam");
-        try {
-            Thread.sleep(x);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-            Thread.currentThread().interrupt();
-        }
-        System.out.println("...asy - koniec odliczania");
-        return (123);
+    public double sub(double x, double y) {
+        return x - y;
     }
 
-    public double add(double x, double y){
-        return x+y;
+    public double mult(double x, double y) {
+        return x * y;
     }
 
-    public double sub(double x, double y){
-        return x-y;
-    }
-
-    public double mult(double x, double y){
-        return x*y;
-    }
-
-    public double div(double x, double y){
-        if(y != 0)
-            return x/y;
+    public double div(double x, double y) {
+        if (y != 0)
+            return x / y;
         else
             throw new ArithmeticException();
     }
 
-    public String introduce(String name1, String name2, Date date) {
-        SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy.MM.dd hh:mm:ss");
+    public String getGrade(String name, double grade) {
         try {
             Thread.sleep(3000);
+            System.out.println("Wpisywanie oceny studentowi...");
         } catch (InterruptedException e) {
             e.printStackTrace();
             Thread.currentThread().interrupt();
         }
-        return "Student 1: " + name1 + "Student 2: " + name2 + ". Today is " + sdf1.format(date);
+        return "Student: " + name + ". Wstawiona osena: " + String.valueOf(grade);
     }
 
     public String show() {
-      String allMethods ="\n1. add: dodawanie. Dwa parametry typu rzeczywistego. Metoda dodajaca dwie liczby.\n"+
-         "2. sub: odejmowanie. Dwa parametry typu rzeczywistego. Metoda odejmujaca dwie liczby\n"+
-         "3. mult: mnozenie. Dwa parametry typu rzeczywistego. Metoda wykonujaca mnozenie dwoch liczb.\n"+
-         "4. div: dzielenie. Dwa parametry typu rzeczywistego. Metoda wykonujaca dzielenie dwoch liczb\n"+
-         "5. introduce: przedstaweinie sie. Trzy parametry, dwa sa typu lancuchow znakow, jeden to data. "+
+        return "\n1. add: dodawanie. Dwa parametry typu rzeczywistego. Metoda dodajaca dwie liczby.\n" +
+                "2. sub: odejmowanie. Dwa parametry typu rzeczywistego. Metoda odejmujaca dwie liczby\n" +
+                "3. mult: mnozenie. Dwa parametry typu rzeczywistego. Metoda wykonujaca mnozenie dwoch liczb.\n" +
+                "4. div: dzielenie. Dwa parametry typu rzeczywistego. Metoda wykonujaca dzielenie dwoch liczb\n" +
+                "5. getGrade: wstawienie oceny. Dwa parametry, Lancuch znakow i watosc rzeczywista. " +
                 "Metoda wypisuje przywitanie i aktualna date.";
-        return  allMethods;
+    }
+
+    private Method findMethod(String name) {
+        Method[] ms = new Method[0];
+        try {
+            ms = Class.forName("serwerRPC").getDeclaredMethods();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        for (Method m : ms) {
+            if (name.equals(m.getName())) {
+                return m;
+            }
+        }
+        return null;
     }
 
     public int methodParamCount(String name) {
-        try {
-            Method[] ms = Class.forName("serwerRPC").getDeclaredMethods();
-            for ( Method m: ms) {
-                if(name.equals(m.getName()))
-                    return m.getParameterCount();
-                System.out.println( m.getName());
-                System.out.println( m.getParameterCount());
-            }
-            return Class.forName("serwerRPC").getDeclaredMethod(name).getParameterCount();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (NoSuchMethodException e) {
-            e.printStackTrace();
-        }
-        return -1;
+        return findMethod(name).getParameterCount();
     }
 
+    public String[] methodParamTypes(String name){
+        String[] paramTypes = new String[methodParamCount(name)];
+        Method method = findMethod(name);
+        for (int i=0; i<method.getParameterTypes().length; i++) {
+            paramTypes[i] = method.getParameterTypes()[i].getTypeName();
+        }
+        return paramTypes;
+    }
 
-    public static void main(String[] args) throws ParseException {
+    public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException {
         System.out.println("Daria Hornik, 246700");
         System.out.println("Kamil Graczyk, 246994");
         SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy.MM.dd hh:mm:ss");
         System.out.println(sdf1.format(new Date()));
+        System.out.println("Nazwa komputera: " + System.getProperty("user.name"));
 
-        System.out.println(System.getProperty("user.name"));
-        System.out.println();
         try {
             System.out.println("Startuje serwer XML-RPC...");
             int port = 5002;

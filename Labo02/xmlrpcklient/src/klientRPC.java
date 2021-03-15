@@ -1,7 +1,8 @@
 import org.apache.xmlrpc.XmlRpcClient;
 
-import java.lang.reflect.Method;
+import java.lang.reflect.Array;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.Scanner;
 import java.util.Vector;
@@ -22,29 +23,37 @@ public class klientRPC {
 
         String path = ipAddr + ":" + port;
         try {
-//            XmlRpcClient srv = new XmlRpcClient("http://localhost:5002");
-
+            //XmlRpcClient srv = new XmlRpcClient("http://localhost:5002");
             XmlRpcClient srv = new XmlRpcClient(path);
 
             Vector<Object> params = new Vector<>();
             Object result = srv.execute("MojSerwer.show", params);
+            
             while (true) {
                 System.out.println("Metody: " + result);
+                System.out.println("Wybierz metode:");
                 String method = in.next();
+                
+                Vector<Object> methodName = new Vector<>();
+                methodName.addElement(method);
+                Object numberOfParam = srv.execute("MojSerwer.methodParamCount", methodName);
+                Object paramTypes = srv.execute("MojSerwer.methodParamTypes", methodName);
 
-
-                Vector<Object> params2 = new Vector<>();
-                params2.addElement(method);
-                Object numberOfParam = srv.execute("MojSerwer.methodParamCount", params2);
-
-                Vector<Object> user_param = new Vector<>();
+                Vector<Object> userParams = new Vector<>();
                 for(int i=0; i<(int) numberOfParam; i++) {
-                    System.out.println("Podaj param: ");
-                    Object param = in.next();
-                    user_param.addElement((Object) param);
+                    System.out.println("Podaj parametr typu: "+ ((Vector)paramTypes).get(i));
+                    String param = in.next();
+                    switch((String) ((Vector)paramTypes).get(i)) {
+                        case "java.lang.String":
+                            userParams.addElement(param);
+                            break;
+                        case "double":
+                            userParams.addElement(new Double( Double.parseDouble(param)));
+                            break;
+                    }
                 }
-                Object method_result = srv.execute("MojSerwer."+method, user_param);
-                System.out.println( method_result.toString());
+                Object method_result = srv.execute("MojSerwer."+method, userParams);
+                System.out.println(method_result.toString());
             }
 
            /* DF df = new DF();
