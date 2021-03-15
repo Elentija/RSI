@@ -20,7 +20,7 @@ public class klientRPC {
 
         System.out.println("Podaj port: ");
         Integer port = in.nextInt();
-
+        ipAddr = "25.43.211.64";
         String path = ipAddr + ":" + port;
         try {
             //XmlRpcClient srv = new XmlRpcClient("http://localhost:5002");
@@ -53,7 +53,7 @@ public class klientRPC {
                     }
                 }
                 Object method_result = srv.execute("MojSerwer."+method, userParams);
-                System.out.println(method_result.toString());
+                System.out.println("Wynik metody: " + method_result.toString());
             }
 
            /* DF df = new DF();
