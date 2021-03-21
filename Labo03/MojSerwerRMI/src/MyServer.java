@@ -4,6 +4,7 @@ public class MyServer
 {
     public static void main(String[] args)
     {
+		System.setProperty("java.rmi.server.hostname","25.43.211.64");
         if (args.length == 0) {
             System.out.println("You have to enter RMI object address in the form: //host_address/service_name");
             return;
@@ -26,8 +27,9 @@ public class MyServer
                 System.setSecurityManager(new SecurityManager()
                 );
             try {
-                InputType implObiektu2 = new InputType();
-                java.rmi.Naming.rebind(args[0], implObiektu2);
+                CalcObject implObiektu = new CalcObjImpl();
+                java.rmi.Naming.rebind(args[0], implObiektu);
+                CalcObject2 implObiektu2 = new CalcObjImpl2();
                 java.rmi.Naming.rebind(args[1], implObiektu2);
                 System.out.println("Server is registered now :-)");
                 System.out.println("Press Crl+C to stop...");
