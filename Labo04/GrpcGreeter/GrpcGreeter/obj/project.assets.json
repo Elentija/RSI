@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
+    "net5.0": {
       "Google.Protobuf/3.11.2": {
         "type": "package",
         "dependencies": {
@@ -624,7 +624,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
+    "net5.0": [
       "Grpc.AspNetCore >= 2.27.0"
     ]
   },
@@ -634,26 +634,26 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\horni\\OneDrive - Politechnika Wroclawska\\Daria\\studia\\Semestr VI\\RSI\\RSI\\Labo04\\GrpcGreeter\\GrpcGreeter\\GrpcGreeter.csproj",
+      "projectUniqueName": "C:\\Users\\horni\\OneDrive - Politechnika Wroclawska\\Daria\\studia\\Semestr VI\\RSI\\RSI-2021\\Labo04\\GrpcGreeter\\GrpcGreeter\\GrpcGreeter.csproj",
       "projectName": "GrpcGreeter",
-      "projectPath": "C:\\Users\\horni\\OneDrive - Politechnika Wroclawska\\Daria\\studia\\Semestr VI\\RSI\\RSI\\Labo04\\GrpcGreeter\\GrpcGreeter\\GrpcGreeter.csproj",
+      "projectPath": "C:\\Users\\horni\\OneDrive - Politechnika Wroclawska\\Daria\\studia\\Semestr VI\\RSI\\RSI-2021\\Labo04\\GrpcGreeter\\GrpcGreeter\\GrpcGreeter.csproj",
       "packagesPath": "C:\\Users\\horni\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\horni\\OneDrive - Politechnika Wroclawska\\Daria\\studia\\Semestr VI\\RSI\\RSI\\Labo04\\GrpcGreeter\\GrpcGreeter\\obj\\",
+      "outputPath": "C:\\Users\\horni\\OneDrive - Politechnika Wroclawska\\Daria\\studia\\Semestr VI\\RSI\\RSI-2021\\Labo04\\GrpcGreeter\\GrpcGreeter\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\horni\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        "net5.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "projectReferences": {}
         }
       },
@@ -664,8 +664,8 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
+      "net5.0": {
+        "targetAlias": "net5.0",
         "dependencies": {
           "Grpc.AspNetCore": {
             "target": "Package",

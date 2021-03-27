@@ -326,11 +326,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\horni\\OneDrive - Politechnika Wroclawska\\Daria\\studia\\Semestr VI\\RSI\\RSI\\Labo04\\GrpcGreeterClient\\GrpcGreeterClient\\GrpcGreeterClient.csproj",
+      "projectUniqueName": "C:\\Users\\horni\\OneDrive - Politechnika Wroclawska\\Daria\\studia\\Semestr VI\\RSI\\RSI-2021\\Labo04\\GrpcGreeterClient\\GrpcGreeterClient\\GrpcGreeterClient.csproj",
       "projectName": "GrpcGreeterClient",
-      "projectPath": "C:\\Users\\horni\\OneDrive - Politechnika Wroclawska\\Daria\\studia\\Semestr VI\\RSI\\RSI\\Labo04\\GrpcGreeterClient\\GrpcGreeterClient\\GrpcGreeterClient.csproj",
+      "projectPath": "C:\\Users\\horni\\OneDrive - Politechnika Wroclawska\\Daria\\studia\\Semestr VI\\RSI\\RSI-2021\\Labo04\\GrpcGreeterClient\\GrpcGreeterClient\\GrpcGreeterClient.csproj",
       "packagesPath": "C:\\Users\\horni\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\horni\\OneDrive - Politechnika Wroclawska\\Daria\\studia\\Semestr VI\\RSI\\RSI\\Labo04\\GrpcGreeterClient\\GrpcGreeterClient\\obj\\",
+      "outputPath": "C:\\Users\\horni\\OneDrive - Politechnika Wroclawska\\Daria\\studia\\Semestr VI\\RSI\\RSI-2021\\Labo04\\GrpcGreeterClient\\GrpcGreeterClient\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\horni\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ATCUm2xGaT2/BtdFQigE4NLDh5JAndk73rVvyA6Z31NaU/CNZPgXHe0IA9IxVHDnDNGUvbwBdPeA4r66wHfMkg==",
+  "dgSpecHash": "qOWD0/xzT6e1mgiHb6BCc4+rijN2jJtSOf8jUaeKUE0E2CdkO302jVq/cOr/9LcYj/eMustZNT7LXiaeDqf6Mw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\horni\\OneDrive - Politechnika Wroclawska\\Daria\\studia\\Semestr VI\\RSI\\RSI\\Labo04\\GrpcGreeterClient\\GrpcGreeterClient\\GrpcGreeterClient.csproj",
+  "projectFilePath": "C:\\Users\\horni\\OneDrive - Politechnika Wroclawska\\Daria\\studia\\Semestr VI\\RSI\\RSI-2021\\Labo04\\GrpcGreeterClient\\GrpcGreeterClient\\GrpcGreeterClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\horni\\.nuget\\packages\\google.protobuf\\3.15.6\\google.protobuf.3.15.6.nupkg.sha512",
     "C:\\Users\\horni\\.nuget\\packages\\grpc.core.api\\2.36.1\\grpc.core.api.2.36.1.nupkg.sha512",
