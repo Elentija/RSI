@@ -1,12 +1,12 @@
 ﻿{
   "profiles": {
     "GrpcGreeter": {
-      "commandName": "Project",
-      "launchBrowser": false,
-      "applicationUrl": "http://25.44.16.181:5001",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+        "commandName": "Project",
+        "launchBrowser": false,
+        "applicationUrl": "http://25.43.211.64:5001",
+        "environmentVariables": {
+            "ASPNETCORE_ENVIRONMENT": "Development"
+        }
     }
   }
 }
