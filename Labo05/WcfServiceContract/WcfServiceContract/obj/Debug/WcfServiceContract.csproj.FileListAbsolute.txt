@@ -1,0 +1,13 @@
+C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\Lab04\WcfServiceContract\WcfServiceContract\bin\Debug\WcfServiceContract.dll.config
+C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\Lab04\WcfServiceContract\WcfServiceContract\bin\Debug\WcfServiceContract.dll
+C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\Lab04\WcfServiceContract\WcfServiceContract\bin\Debug\WcfServiceContract.pdb
+C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\Lab04\WcfServiceContract\WcfServiceContract\obj\Debug\WcfServiceContract.csproj.CoreCompileInputs.cache
+C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\Lab04\WcfServiceContract\WcfServiceContract\obj\Debug\WcfServiceContract.dll
+C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\Lab04\WcfServiceContract\WcfServiceContract\obj\Debug\WcfServiceContract.pdb
+C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\bin\Debug\WcfServiceContract.dll.config
+C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\bin\Debug\WcfServiceContract.dll
+C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\bin\Debug\WcfServiceContract.pdb
+C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\obj\Debug\WcfServiceContract.csprojAssemblyReference.cache
+C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\obj\Debug\WcfServiceContract.csproj.CoreCompileInputs.cache
+C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\obj\Debug\WcfServiceContract.dll
+C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\obj\Debug\WcfServiceContract.pdb
