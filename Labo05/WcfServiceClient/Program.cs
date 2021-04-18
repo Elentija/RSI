@@ -16,54 +16,40 @@ namespace WcfServiceClient
 
             // Krok 2: Wywolanie operacji uslugi.
             Console.WriteLine("Klient 1: ");
-            Console.WriteLine($"Pobierz informacje o firmie: ");
-            var result = klient1.GetCompanyInfo();
+            Console.WriteLine($"Pobierz informacje o zamówieniach w przedziale 2013 - 2014: ");
+            object result = klient1.SaleBeetween2013_2014();
             Console.WriteLine(result);
-            Console.Write($"Wywołaj metode odejmowania dwóch liczb: ");
-            result = klient1.GetLaunches();
+            Console.Write($"Policz sumę z jednego dnia: ");
+            result = klient1.SumSaleInDay(3, 6, 2012);
+            Console.WriteLine(result);
+            Console.Write($"Policz liczbe sprzedanych produktów dla pracownika o podanych danych : ");
+            result = klient1.NumberOfSoldProduct("Shu", "Ito");
             Console.WriteLine(result);
             klient1.Close();
 
-            /* Console.Write($"Wywołaj metode mnożenia dwóch liczb: ");
-             result = klient1.Pomnoz(3, 6);
-             Console.WriteLine(result);
-             Console.Write($"Wywołaj metode sumowanie: ");
-             klient1.Sumuj(1);
-             result = klient1.Sumuj(11);
-             Console.WriteLine(result);
-             klient1.Close();
+            Console.WriteLine("Klient 2: ");
+            Console.WriteLine($"Pobierz informacje o zamówieniach w przedziale 2013 - 2014: ");
+            result = klient2.SaleBeetween2013_2014();
+            Console.WriteLine(result);
+            Console.Write($"Policz sumę z jednego dnia: ");
+            result = klient2.SumSaleInDay(3, 6, 2012);
+            Console.WriteLine(result);
+            Console.Write($"Policz liczbe sprzedanych produktów dla pracownika o podanych danych : ");
+            result = klient2.NumberOfSoldProduct("Shu", "Ito");
+            Console.WriteLine(result);
+            klient2.Close();
 
-             Console.WriteLine("Klient 2: ");
-             Console.Write($"Wywołaj metode dodawania dwóch liczb: ");
-             result = klient2.Dodaj(2, 3);
-             Console.WriteLine(result);
-             Console.Write($"Wywołaj metode odejmowania dwóch liczb: ");
-             result = klient2.Odejmij(6, 3);
-             Console.WriteLine(result);
-             Console.Write($"Wywołaj metode mnożenia dwóch liczb: ");
-             result = klient2.Pomnoz(3, 6);
-             Console.WriteLine(result);
-             Console.Write($"Wywołaj metode sumowanie: ");
-             klient2.Sumuj(2);
-             result = klient2.Sumuj(1);
-             Console.WriteLine(result);
-             klient2.Close();
-
-             Console.WriteLine("Klient 3: ");
-             Console.Write($"Wywołaj metode dodawania dwóch liczb: ");
-             result = klient3.Dodaj(2, 3);
-             Console.WriteLine(result);
-             Console.Write($"Wywołaj metode odejmowania dwóch liczb: ");
-             result = klient3.Odejmij(6, 3);
-             Console.WriteLine(result);
-             Console.Write($"Wywołaj metode mnożenia dwóch liczb: ");
-             result = klient3.Pomnoz(3, 6);
-             Console.WriteLine(result);
-             Console.Write($"Wywołaj metode sumowanie: ");
-             klient3.Sumuj(8);
-             result = klient3.Sumuj(15);
-             Console.WriteLine(result);
-             klient3.Close();*/
+            Console.WriteLine("Klient 3: ");
+            Console.WriteLine($"Pobierz informacje o zamówieniach w przedziale 2013 - 2014: ");
+            result = klient3.SaleBeetween2013_2014();
+            Console.WriteLine(result);
+            Console.Write($"Policz sumę z jednego dnia: ");
+            result = klient3.SumSaleInDay(3, 6, 2020);
+            Console.WriteLine(result);
+            Console.Write($"Policz liczbe sprzedanych produktów dla pracownika o podanych danych : ");
+            klient3.NumberOfSoldProduct("Shu", "Ito");
+            Console.WriteLine(result);
+            klient3.Close(); 
         }
     }
 }

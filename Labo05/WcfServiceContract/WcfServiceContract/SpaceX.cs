@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Data.SqlClient;
 using System.IO;
 using System.Net;
 using System.Net.Http;
@@ -38,7 +39,7 @@ namespace WcfServiceContract
                         Console.WriteLine("Wywołano metode pobrania informacji o firmie SpaceX");
                         responseData.Remove(0);
                         responseData.Remove(responseData.Length - 1);
-                       foreach (var line in responseData.Split(','))
+                        foreach (var line in responseData.Split(','))
                         {
                             info += line;
                             info += "\n";
@@ -53,38 +54,93 @@ namespace WcfServiceContract
             return info;
         }
 
-        public async Task<object> GetLaunches()
+        public async Task<object> SaleBeetween2013_2014()
         {
-            string answer = "";
-            var client = new HttpClient();
-            var request = new HttpRequestMessage
-            {
-                Method = HttpMethod.Get,
-                RequestUri = new Uri("https://www.7timer.info/bin/astro.php?lon=52.13&lat=21.42&ac=0&unit=metric&output=json&tzshift=0"),
-            };
+            string connetionString;
+            SqlConnection cnn;
+            connetionString = @"Data Source=ELENTIYA;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            cnn = new SqlConnection(connetionString);
+            cnn.Open();
 
-            using (var response = await client.SendAsync(request))
+            SqlCommand command;
+            SqlDataReader dataReader;
+            String sql, output = "";
+            sql = @"SELECT  TOP(100) OrderDate, Person.FirstName, Person.LastName, SubTotal
+                FROM AdventureWorks2019.Sales.SalesOrderHeader
+                JOIN AdventureWorks2019.Sales.Customer ON SalesOrderHeader.CustomerID = Customer.CustomerID
+                JOIN AdventureWorks2019.Person.Person ON Customer.PersonID = Person.BusinessEntityID
+                WHERE OrderDate > '10.10.2013' AND OrderDate< '10.10.2014'";
+            command = new SqlCommand(sql, cnn);
+            dataReader = command.ExecuteReader();
+
+            while(dataReader.Read())
             {
-                response.EnsureSuccessStatusCode();
-                var body = await response.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<Product>(body);
-                Console.WriteLine(body);
-                return body;
+                output += dataReader.GetValue(0) + " - " + dataReader.GetValue(1) + " - " + dataReader.GetValue(2) + " - " + dataReader.GetValue(3) +" zł" + "\n";
             }
+            Console.WriteLine("Metoda 1");
+            Console.WriteLine(output);
+            cnn.Close();
+            return output;
         }
 
-
-        public double Pomnoz(double n1, double n2)
+        public async Task<object> SumSaleInDay(int d, int m, int y)
         {
-            var result = n1 * n2;
-            Console.WriteLine($"Wywołano metode mnożenia dwóch liczb: {n1} * {n2} = {result}");
-            return result;
+            string connetionString;
+            SqlConnection cnn;
+            connetionString = @"Data Source=ELENTIYA;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            cnn = new SqlConnection(connetionString);
+            cnn.Open();
+
+            SqlCommand command;
+            SqlDataReader dataReader;
+            String sql, output = "";
+            sql = @"SELECT DAY(OrderDate), MONTH(OrderDate), YEAR(OrderDate), SUM(SubTotal)
+                FROM AdventureWorks2019.Sales.SalesOrderHeader
+                WHERE DAY(OrderDate) = "+d.ToString() + " AND MONTH(OrderDate) = " + m.ToString() + " AND YEAR(OrderDate) =" + y.ToString() +
+                " GROUP BY DAY(OrderDate), MONTH(OrderDate), YEAR(OrderDate)";
+            command = new SqlCommand(sql, cnn);
+            dataReader = command.ExecuteReader();
+
+            while (dataReader.Read())
+            {
+                output += "Dzień" +dataReader.GetValue(0) + " - Miesiąc: " + dataReader.GetValue(1) + " - Rok: " + dataReader.GetValue(2) + " - Wartość: " + dataReader.GetValue(3) + " zł" + "\n";
+            }
+            Console.WriteLine("Metoda 2");
+            cnn.Close();
+            return output;
         }
 
-        public double Sumuj(double n1)
+        public async Task<object> NumberOfSoldProduct(string name, string lastname)
         {
-            Console.WriteLine($"Wywołano metode sumowania globalnego: {suma} + {n1} = {suma += n1}");
-            return suma;
+            string connetionString;
+            SqlConnection cnn;
+            connetionString = @"Data Source=ELENTIYA;Integrated Security=True;Connect Timeout=1000;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            cnn = new SqlConnection(connetionString);
+            cnn.Open();
+
+            SqlCommand command;
+            SqlDataReader dataReader;
+            String sql, output = "";
+            sql = @"SELECT TOP(10) Product.Name, COUNT(Product.ProductID) 
+                FROM AdventureWorks2019.Person.Person
+                JOIN AdventureWorks2019.HumanResources.Employee ON Employee.BusinessEntityID = Person.BusinessEntityID
+                JOIN AdventureWorks2019.Sales.SalesPerson ON SalesPerson.BusinessEntityID = Employee.BusinessEntityID
+                JOIN AdventureWorks2019.Sales.SalesOrderHeader ON SalesOrderHeader.SalesPersonID = SalesPerson.BusinessEntityID
+                JOIN AdventureWorks2019.Sales.SalesOrderDetail ON SalesOrderDetail.SalesOrderID = SalesOrderHeader.SalesOrderID
+                JOIN AdventureWorks2019.Production.Product ON Product.ProductID = SalesOrderDetail.ProductID 
+                WHERE Person.LastName ='" + lastname.ToString() + "' AND Person.FirstName = '" + name.ToString() + "' GROUP BY Product.Name";
+
+            command = new SqlCommand(sql, cnn);
+            dataReader = command.ExecuteReader();
+
+            while (dataReader.Read())
+            {
+                output += dataReader.GetValue(0) + " - " + dataReader.GetValue(1) + " sztuk" + "\n";
+            }
+            Console.WriteLine("Metoda 3");
+            Console.WriteLine(output);
+            cnn.Close();
+            return output;
         }
     }
 }

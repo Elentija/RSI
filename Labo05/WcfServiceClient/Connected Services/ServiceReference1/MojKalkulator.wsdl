@@ -95,7 +95,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="mojEndpoint3_GetCompanyInfo_Input_policy">
+  <wsp:Policy wsu:Id="mojEndpoint3_SaleBeetween2013_2014_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -110,7 +110,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="mojEndpoint3_GetCompanyInfo_output_policy">
+  <wsp:Policy wsu:Id="mojEndpoint3_SaleBeetween2013_2014_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -125,7 +125,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="mojEndpoint3_GetLaunches_Input_policy">
+  <wsp:Policy wsu:Id="mojEndpoint3_SumSaleInDay_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -140,7 +140,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="mojEndpoint3_GetLaunches_output_policy">
+  <wsp:Policy wsu:Id="mojEndpoint3_SumSaleInDay_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -155,7 +155,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="mojEndpoint3_Pomnoz_Input_policy">
+  <wsp:Policy wsu:Id="mojEndpoint3_NumberOfSoldProduct_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -170,37 +170,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="mojEndpoint3_Pomnoz_output_policy">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
-        </sp:SignedParts>
-      </wsp:All>
-    </wsp:ExactlyOne>
-  </wsp:Policy>
-  <wsp:Policy wsu:Id="mojEndpoint3_Sumuj_Input_policy">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
-        </sp:SignedParts>
-      </wsp:All>
-    </wsp:ExactlyOne>
-  </wsp:Policy>
-  <wsp:Policy wsu:Id="mojEndpoint3_Sumuj_output_policy">
+  <wsp:Policy wsu:Id="mojEndpoint3_NumberOfSoldProduct_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -310,7 +280,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_GetCompanyInfo_Input_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_SaleBeetween2013_2014_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -325,7 +295,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_GetCompanyInfo_output_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_SaleBeetween2013_2014_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -340,7 +310,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_GetLaunches_Input_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_SumSaleInDay_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -355,7 +325,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_GetLaunches_output_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_SumSaleInDay_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -370,7 +340,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_Pomnoz_Input_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_NumberOfSoldProduct_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -385,37 +355,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_Pomnoz_output_policy">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
-        </sp:SignedParts>
-      </wsp:All>
-    </wsp:ExactlyOne>
-  </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_Sumuj_Input_policy">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
-        </sp:SignedParts>
-      </wsp:All>
-    </wsp:ExactlyOne>
-  </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_Sumuj_output_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_NumberOfSoldProduct_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -436,92 +376,71 @@
       <xsd:import schemaLocation="http://localhost:11115/mojkalkulator?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="ISpaceX_GetCompanyInfo_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetCompanyInfo" />
+  <wsdl:message name="ISpaceX_SaleBeetween2013_2014_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaleBeetween2013_2014" />
   </wsdl:message>
-  <wsdl:message name="ISpaceX_GetCompanyInfo_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetCompanyInfoResponse" />
+  <wsdl:message name="ISpaceX_SaleBeetween2013_2014_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaleBeetween2013_2014Response" />
   </wsdl:message>
-  <wsdl:message name="ISpaceX_GetLaunches_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetLaunches" />
+  <wsdl:message name="ISpaceX_SumSaleInDay_InputMessage">
+    <wsdl:part name="parameters" element="tns:SumSaleInDay" />
   </wsdl:message>
-  <wsdl:message name="ISpaceX_GetLaunches_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetLaunchesResponse" />
+  <wsdl:message name="ISpaceX_SumSaleInDay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SumSaleInDayResponse" />
   </wsdl:message>
-  <wsdl:message name="ISpaceX_Pomnoz_InputMessage">
-    <wsdl:part name="parameters" element="tns:Pomnoz" />
+  <wsdl:message name="ISpaceX_NumberOfSoldProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:NumberOfSoldProduct" />
   </wsdl:message>
-  <wsdl:message name="ISpaceX_Pomnoz_OutputMessage">
-    <wsdl:part name="parameters" element="tns:PomnozResponse" />
-  </wsdl:message>
-  <wsdl:message name="ISpaceX_Sumuj_InputMessage">
-    <wsdl:part name="parameters" element="tns:Sumuj" />
-  </wsdl:message>
-  <wsdl:message name="ISpaceX_Sumuj_OutputMessage">
-    <wsdl:part name="parameters" element="tns:SumujResponse" />
+  <wsdl:message name="ISpaceX_NumberOfSoldProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NumberOfSoldProductResponse" />
   </wsdl:message>
   <wsdl:portType name="ISpaceX">
-    <wsdl:operation name="GetCompanyInfo">
-      <wsdl:input wsaw:Action="http://tempuri.org/ISpaceX/GetCompanyInfo" message="tns:ISpaceX_GetCompanyInfo_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ISpaceX/GetCompanyInfoResponse" message="tns:ISpaceX_GetCompanyInfo_OutputMessage" />
+    <wsdl:operation name="SaleBeetween2013_2014">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISpaceX/SaleBeetween2013_2014" message="tns:ISpaceX_SaleBeetween2013_2014_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISpaceX/SaleBeetween2013_2014Response" message="tns:ISpaceX_SaleBeetween2013_2014_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="GetLaunches">
-      <wsdl:input wsaw:Action="http://tempuri.org/ISpaceX/GetLaunches" message="tns:ISpaceX_GetLaunches_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ISpaceX/GetLaunchesResponse" message="tns:ISpaceX_GetLaunches_OutputMessage" />
+    <wsdl:operation name="SumSaleInDay">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISpaceX/SumSaleInDay" message="tns:ISpaceX_SumSaleInDay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISpaceX/SumSaleInDayResponse" message="tns:ISpaceX_SumSaleInDay_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="Pomnoz">
-      <wsdl:input wsaw:Action="http://tempuri.org/ISpaceX/Pomnoz" message="tns:ISpaceX_Pomnoz_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ISpaceX/PomnozResponse" message="tns:ISpaceX_Pomnoz_OutputMessage" />
-    </wsdl:operation>
-    <wsdl:operation name="Sumuj">
-      <wsdl:input wsaw:Action="http://tempuri.org/ISpaceX/Sumuj" message="tns:ISpaceX_Sumuj_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ISpaceX/SumujResponse" message="tns:ISpaceX_Sumuj_OutputMessage" />
+    <wsdl:operation name="NumberOfSoldProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISpaceX/NumberOfSoldProduct" message="tns:ISpaceX_NumberOfSoldProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISpaceX/NumberOfSoldProductResponse" message="tns:ISpaceX_NumberOfSoldProduct_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="mojEndpoint3" type="tns:ISpaceX">
     <wsp:PolicyReference URI="#mojEndpoint3_policy" />
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="GetCompanyInfo">
-      <soap12:operation soapAction="http://tempuri.org/ISpaceX/GetCompanyInfo" style="document" />
+    <wsdl:operation name="SaleBeetween2013_2014">
+      <soap12:operation soapAction="http://tempuri.org/ISpaceX/SaleBeetween2013_2014" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#mojEndpoint3_GetCompanyInfo_Input_policy" />
+        <wsp:PolicyReference URI="#mojEndpoint3_SaleBeetween2013_2014_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#mojEndpoint3_GetCompanyInfo_output_policy" />
+        <wsp:PolicyReference URI="#mojEndpoint3_SaleBeetween2013_2014_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetLaunches">
-      <soap12:operation soapAction="http://tempuri.org/ISpaceX/GetLaunches" style="document" />
+    <wsdl:operation name="SumSaleInDay">
+      <soap12:operation soapAction="http://tempuri.org/ISpaceX/SumSaleInDay" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#mojEndpoint3_GetLaunches_Input_policy" />
+        <wsp:PolicyReference URI="#mojEndpoint3_SumSaleInDay_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#mojEndpoint3_GetLaunches_output_policy" />
+        <wsp:PolicyReference URI="#mojEndpoint3_SumSaleInDay_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="Pomnoz">
-      <soap12:operation soapAction="http://tempuri.org/ISpaceX/Pomnoz" style="document" />
+    <wsdl:operation name="NumberOfSoldProduct">
+      <soap12:operation soapAction="http://tempuri.org/ISpaceX/NumberOfSoldProduct" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#mojEndpoint3_Pomnoz_Input_policy" />
+        <wsp:PolicyReference URI="#mojEndpoint3_NumberOfSoldProduct_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#mojEndpoint3_Pomnoz_output_policy" />
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Sumuj">
-      <soap12:operation soapAction="http://tempuri.org/ISpaceX/Sumuj" style="document" />
-      <wsdl:input>
-        <wsp:PolicyReference URI="#mojEndpoint3_Sumuj_Input_policy" />
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <wsp:PolicyReference URI="#mojEndpoint3_Sumuj_output_policy" />
+        <wsp:PolicyReference URI="#mojEndpoint3_NumberOfSoldProduct_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
@@ -529,55 +448,44 @@
   <wsdl:binding name="WSHttpBinding_ISpaceX" type="tns:ISpaceX">
     <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_policy" />
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="GetCompanyInfo">
-      <soap12:operation soapAction="http://tempuri.org/ISpaceX/GetCompanyInfo" style="document" />
+    <wsdl:operation name="SaleBeetween2013_2014">
+      <soap12:operation soapAction="http://tempuri.org/ISpaceX/SaleBeetween2013_2014" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_GetCompanyInfo_Input_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_SaleBeetween2013_2014_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_GetCompanyInfo_output_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_SaleBeetween2013_2014_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetLaunches">
-      <soap12:operation soapAction="http://tempuri.org/ISpaceX/GetLaunches" style="document" />
+    <wsdl:operation name="SumSaleInDay">
+      <soap12:operation soapAction="http://tempuri.org/ISpaceX/SumSaleInDay" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_GetLaunches_Input_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_SumSaleInDay_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_GetLaunches_output_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_SumSaleInDay_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="Pomnoz">
-      <soap12:operation soapAction="http://tempuri.org/ISpaceX/Pomnoz" style="document" />
+    <wsdl:operation name="NumberOfSoldProduct">
+      <soap12:operation soapAction="http://tempuri.org/ISpaceX/NumberOfSoldProduct" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_Pomnoz_Input_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_NumberOfSoldProduct_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_Pomnoz_output_policy" />
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Sumuj">
-      <soap12:operation soapAction="http://tempuri.org/ISpaceX/Sumuj" style="document" />
-      <wsdl:input>
-        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_Sumuj_Input_policy" />
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_Sumuj_output_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_NumberOfSoldProduct_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="BasicHttpBinding_ISpaceX" type="tns:ISpaceX">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="GetCompanyInfo">
-      <soap:operation soapAction="http://tempuri.org/ISpaceX/GetCompanyInfo" style="document" />
+    <wsdl:operation name="SaleBeetween2013_2014">
+      <soap:operation soapAction="http://tempuri.org/ISpaceX/SaleBeetween2013_2014" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -585,8 +493,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetLaunches">
-      <soap:operation soapAction="http://tempuri.org/ISpaceX/GetLaunches" style="document" />
+    <wsdl:operation name="SumSaleInDay">
+      <soap:operation soapAction="http://tempuri.org/ISpaceX/SumSaleInDay" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -594,17 +502,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="Pomnoz">
-      <soap:operation soapAction="http://tempuri.org/ISpaceX/Pomnoz" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Sumuj">
-      <soap:operation soapAction="http://tempuri.org/ISpaceX/Sumuj" style="document" />
+    <wsdl:operation name="NumberOfSoldProduct">
+      <soap:operation soapAction="http://tempuri.org/ISpaceX/NumberOfSoldProduct" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

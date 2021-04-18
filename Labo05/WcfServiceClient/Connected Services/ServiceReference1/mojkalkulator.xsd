@@ -1,55 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="GetCompanyInfo">
+  <xs:element name="SaleBeetween2013_2014">
     <xs:complexType>
       <xs:sequence />
     </xs:complexType>
   </xs:element>
-  <xs:element name="GetCompanyInfoResponse">
+  <xs:element name="SaleBeetween2013_2014Response">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="GetCompanyInfoResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SaleBeetween2013_2014Result" nillable="true" type="xs:anyType" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="GetLaunches">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="GetLaunchesResponse">
+  <xs:element name="SumSaleInDay">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="GetLaunchesResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="d" type="xs:int" />
+        <xs:element minOccurs="0" name="m" type="xs:int" />
+        <xs:element minOccurs="0" name="y" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="Pomnoz">
+  <xs:element name="SumSaleInDayResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="n1" type="xs:double" />
-        <xs:element minOccurs="0" name="n2" type="xs:double" />
+        <xs:element minOccurs="0" name="SumSaleInDayResult" nillable="true" type="xs:anyType" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="PomnozResponse">
+  <xs:element name="NumberOfSoldProduct">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="PomnozResult" type="xs:double" />
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lastname" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="Sumuj">
+  <xs:element name="NumberOfSoldProductResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="n1" type="xs:double" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="SumujResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="SumujResult" type="xs:double" />
+        <xs:element minOccurs="0" name="NumberOfSoldProductResult" nillable="true" type="xs:anyType" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

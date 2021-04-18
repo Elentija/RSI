@@ -15,29 +15,23 @@ namespace WcfServiceClient.ServiceReference1 {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.ISpaceX")]
     public interface ISpaceX {
         
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/GetCompanyInfo", ReplyAction="http://tempuri.org/ISpaceX/GetCompanyInfoResponse")]
-        string GetCompanyInfo();
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/SaleBeetween2013_2014", ReplyAction="http://tempuri.org/ISpaceX/SaleBeetween2013_2014Response")]
+        object SaleBeetween2013_2014();
         
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/GetCompanyInfo", ReplyAction="http://tempuri.org/ISpaceX/GetCompanyInfoResponse")]
-        System.Threading.Tasks.Task<string> GetCompanyInfoAsync();
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/SaleBeetween2013_2014", ReplyAction="http://tempuri.org/ISpaceX/SaleBeetween2013_2014Response")]
+        System.Threading.Tasks.Task<object> SaleBeetween2013_2014Async();
         
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/GetLaunches", ReplyAction="http://tempuri.org/ISpaceX/GetLaunchesResponse")]
-        string GetLaunches();
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/SumSaleInDay", ReplyAction="http://tempuri.org/ISpaceX/SumSaleInDayResponse")]
+        object SumSaleInDay(int d, int m, int y);
         
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/GetLaunches", ReplyAction="http://tempuri.org/ISpaceX/GetLaunchesResponse")]
-        System.Threading.Tasks.Task<string> GetLaunchesAsync();
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/SumSaleInDay", ReplyAction="http://tempuri.org/ISpaceX/SumSaleInDayResponse")]
+        System.Threading.Tasks.Task<object> SumSaleInDayAsync(int d, int m, int y);
         
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/Pomnoz", ReplyAction="http://tempuri.org/ISpaceX/PomnozResponse")]
-        double Pomnoz(double n1, double n2);
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/NumberOfSoldProduct", ReplyAction="http://tempuri.org/ISpaceX/NumberOfSoldProductResponse")]
+        object NumberOfSoldProduct(string name, string lastname);
         
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/Pomnoz", ReplyAction="http://tempuri.org/ISpaceX/PomnozResponse")]
-        System.Threading.Tasks.Task<double> PomnozAsync(double n1, double n2);
-        
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/Sumuj", ReplyAction="http://tempuri.org/ISpaceX/SumujResponse")]
-        double Sumuj(double n1);
-        
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/Sumuj", ReplyAction="http://tempuri.org/ISpaceX/SumujResponse")]
-        System.Threading.Tasks.Task<double> SumujAsync(double n1);
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/NumberOfSoldProduct", ReplyAction="http://tempuri.org/ISpaceX/NumberOfSoldProductResponse")]
+        System.Threading.Tasks.Task<object> NumberOfSoldProductAsync(string name, string lastname);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -67,36 +61,28 @@ namespace WcfServiceClient.ServiceReference1 {
                 base(binding, remoteAddress) {
         }
         
-        public string GetCompanyInfo() {
-            return base.Channel.GetCompanyInfo();
+        public object SaleBeetween2013_2014() {
+            return base.Channel.SaleBeetween2013_2014();
         }
         
-        public System.Threading.Tasks.Task<string> GetCompanyInfoAsync() {
-            return base.Channel.GetCompanyInfoAsync();
+        public System.Threading.Tasks.Task<object> SaleBeetween2013_2014Async() {
+            return base.Channel.SaleBeetween2013_2014Async();
         }
         
-        public string GetLaunches() {
-            return base.Channel.GetLaunches();
+        public object SumSaleInDay(int d, int m, int y) {
+            return base.Channel.SumSaleInDay(d, m, y);
         }
         
-        public System.Threading.Tasks.Task<string> GetLaunchesAsync() {
-            return base.Channel.GetLaunchesAsync();
+        public System.Threading.Tasks.Task<object> SumSaleInDayAsync(int d, int m, int y) {
+            return base.Channel.SumSaleInDayAsync(d, m, y);
         }
         
-        public double Pomnoz(double n1, double n2) {
-            return base.Channel.Pomnoz(n1, n2);
+        public object NumberOfSoldProduct(string name, string lastname) {
+            return base.Channel.NumberOfSoldProduct(name, lastname);
         }
         
-        public System.Threading.Tasks.Task<double> PomnozAsync(double n1, double n2) {
-            return base.Channel.PomnozAsync(n1, n2);
-        }
-        
-        public double Sumuj(double n1) {
-            return base.Channel.Sumuj(n1);
-        }
-        
-        public System.Threading.Tasks.Task<double> SumujAsync(double n1) {
-            return base.Channel.SumujAsync(n1);
+        public System.Threading.Tasks.Task<object> NumberOfSoldProductAsync(string name, string lastname) {
+            return base.Channel.NumberOfSoldProductAsync(name, lastname);
         }
     }
 }

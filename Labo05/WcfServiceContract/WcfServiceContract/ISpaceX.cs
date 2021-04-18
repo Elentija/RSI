@@ -8,15 +8,12 @@ namespace WcfServiceContract
     public interface ISpaceX
     {
         [OperationContract]
-        Task<string> GetCompanyInfo();
+        Task<object> SaleBeetween2013_2014();
 
         [OperationContract]
-        Task<object> GetLaunches();
+        Task<object> SumSaleInDay(int d, int m, int y);
 
         [OperationContract]
-        double Pomnoz(double n1, double n2);
-
-        [OperationContract]
-        double Sumuj(double n1);
+        Task<object> NumberOfSoldProduct(string name, string lastname);
     }
 }

@@ -15,3 +15,4 @@ C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RS
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\obj\Debug\WcfServiceContract.csproj.CopyComplete
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\bin\Debug\Nancy.dll
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\bin\Debug\Nancy.xml
+C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\obj\Debug\WcfServiceContract.csprojAssemblyReference.cache
