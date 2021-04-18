@@ -47,6 +47,7 @@ namespace WcfServiceClient
             result = klient2.NumberOfSoldProduct("Shu", "Ito");
             Console.WriteLine(result);
             klient2.Close();
+            Console.ReadLine();
         }
         public static void GetLocalIPAddress()
         {

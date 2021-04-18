@@ -20,3 +20,14 @@ C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RS
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceHost\obj\Debug\WcfServiceHost.csproj.CopyComplete
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceHost\obj\Debug\WcfServiceHost.exe
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceHost\obj\Debug\WcfServiceHost.pdb
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceHost\bin\Debug\WcfServiceHost.exe.config
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceHost\bin\Debug\WcfServiceHost.exe
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceHost\bin\Debug\WcfServiceHost.pdb
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceHost\bin\Debug\WcfServiceContract.dll
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceHost\bin\Debug\WcfServiceContract.pdb
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceHost\bin\Debug\WcfServiceContract.dll.config
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceHost\obj\Debug\WcfServiceHost.csprojAssemblyReference.cache
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceHost\obj\Debug\WcfServiceHost.csproj.CoreCompileInputs.cache
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceHost\obj\Debug\WcfServiceHost.csproj.CopyComplete
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceHost\obj\Debug\WcfServiceHost.exe
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceHost\obj\Debug\WcfServiceHost.pdb

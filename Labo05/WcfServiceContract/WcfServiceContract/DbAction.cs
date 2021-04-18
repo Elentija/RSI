@@ -80,7 +80,7 @@ namespace WcfServiceContract
             SqlCommand command;
             SqlDataReader dataReader;
             String sql, output = "";
-            sql = @"SELECT TOP(10) Product.Name, COUNT(Product.ProductID) 
+            sql = @"SELECT TOP(100) Product.Name, COUNT(Product.ProductID) 
                 FROM AdventureWorks2019.Person.Person
                 JOIN AdventureWorks2019.HumanResources.Employee ON Employee.BusinessEntityID = Person.BusinessEntityID
                 JOIN AdventureWorks2019.Sales.SalesPerson ON SalesPerson.BusinessEntityID = Employee.BusinessEntityID

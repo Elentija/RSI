@@ -15,3 +15,15 @@ C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RS
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\obj\Debug\WcfServiceContract.csproj.CopyComplete
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\bin\Debug\Nancy.dll
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\bin\Debug\Nancy.xml
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\bin\Debug\WcfServiceContract.dll.config
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\bin\Debug\WcfServiceContract.dll
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\bin\Debug\WcfServiceContract.pdb
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\bin\Debug\Nancy.dll
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\bin\Debug\Nancy.xml
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\obj\Debug\WcfServiceContract.csproj.CoreCompileInputs.cache
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\obj\Debug\WcfServiceContract.csproj.CopyComplete
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\obj\Debug\WcfServiceContract.dll
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\obj\Debug\WcfServiceContract.pdb
+C:\Users\kogol\Desktop\6 semestr\repo\Rozproszone Systemy Informatyczne\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\obj\Debug\WcfServiceContract.csprojAssemblyReference.cache
