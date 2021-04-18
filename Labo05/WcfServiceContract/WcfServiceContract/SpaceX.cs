@@ -7,7 +7,6 @@ using System.Net.Http;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
-using WcfServiceContract.Models;
 
 namespace WcfServiceContract
 {
@@ -15,45 +14,7 @@ namespace WcfServiceContract
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
     public class SpaceX : ISpaceX
     {
-        double suma = 0;
-
-        public async Task<string> GetCompanyInfo()
-        {
-            string info = "";
-            try
-            {
-                var request = WebRequest.CreateHttp("https://api.spacexdata.com/v3");
-                request.Method = WebRequestMethods.Http.Get;
-                request.ContentType = "aplication/json; charset=utf-8";
-                await Task.Factory.FromAsync<WebResponse>(request.BeginGetResponse, request.EndGetResponse, null)
-                    .ContinueWith(task =>
-                    {
-                        string responseData = "";
-                        var response = (HttpWebResponse)task.Result;
-                        if (response.StatusCode == HttpStatusCode.OK)
-                        {
-                            StreamReader responseReader = new StreamReader(response.GetResponseStream(), Encoding.UTF8);
-                            responseData = responseReader.ReadToEnd();
-                        };
-
-                        Console.WriteLine("Wywołano metode pobrania informacji o firmie SpaceX");
-                        responseData.Remove(0);
-                        responseData.Remove(responseData.Length - 1);
-                        foreach (var line in responseData.Split(','))
-                        {
-                            info += line;
-                            info += "\n";
-                        }
-                        return info;
-                    });
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-            return info;
-        }
-
+       
         public async Task<object> SaleBeetween2013_2014()
         {
             string connetionString;

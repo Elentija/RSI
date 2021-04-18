@@ -22,10 +22,10 @@
     <MetadataSource Address="http://localhost:11115/mojkalkulator" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="mojkalkulator.xsd" MetadataType="Schema" ID="bf2724e5-912b-4fb5-a5d1-3fa0cfd37e93" SourceId="1" SourceUrl="http://localhost:11115/mojkalkulator?xsd=xsd0" />
-    <MetadataFile FileName="mojkalkulator.disco" MetadataType="Disco" ID="bac7bda4-8cfa-4104-ae9e-287e785e3f30" SourceId="1" SourceUrl="http://localhost:11115/mojkalkulator?disco" />
-    <MetadataFile FileName="MojKalkulator.wsdl" MetadataType="Wsdl" ID="4833afb2-e4af-4b43-a5ac-5eae436f55a0" SourceId="1" SourceUrl="http://localhost:11115/mojkalkulator?wsdl" />
-    <MetadataFile FileName="mojkalkulator1.xsd" MetadataType="Schema" ID="fd900198-c01a-4d41-bf7b-9c76e3633907" SourceId="1" SourceUrl="http://localhost:11115/mojkalkulator?xsd=xsd1" />
+    <MetadataFile FileName="mojkalkulator1.disco" MetadataType="Disco" ID="d9138339-ff38-4cc4-b7b1-07321d0c04d6" SourceId="1" SourceUrl="http://25.44.16.181:11115/mojkalkulator?disco" />
+    <MetadataFile FileName="mojkalkulator2.xsd" MetadataType="Schema" ID="7b3aba72-6cad-470f-becb-9aa0315d3ea9" SourceId="1" SourceUrl="http://25.44.16.181:11115/mojkalkulator?xsd=xsd0" />
+    <MetadataFile FileName="SpaceX.wsdl" MetadataType="Wsdl" ID="0e760ac8-806e-44cd-afbf-429722d95837" SourceId="1" SourceUrl="http://25.44.16.181:11115/mojkalkulator?wsdl" />
+    <MetadataFile FileName="mojkalkulator21.xsd" MetadataType="Schema" ID="8b319d7c-f15d-4291-8287-44d6742469d7" SourceId="1" SourceUrl="http://25.44.16.181:11115/mojkalkulator?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
