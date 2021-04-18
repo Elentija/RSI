@@ -1,32 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="Dodaj">
+  <xs:element name="GetCompanyInfo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyInfoResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="n1" type="xs:double" />
-        <xs:element minOccurs="0" name="n2" type="xs:double" />
+        <xs:element minOccurs="0" name="GetCompanyInfoResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="DodajResponse">
+  <xs:element name="GetLaunches">
     <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="DodajResult" type="xs:double" />
-      </xs:sequence>
+      <xs:sequence />
     </xs:complexType>
   </xs:element>
-  <xs:element name="Odejmij">
+  <xs:element name="GetLaunchesResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="n1" type="xs:double" />
-        <xs:element minOccurs="0" name="n2" type="xs:double" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="OdejmijResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="OdejmijResult" type="xs:double" />
+        <xs:element minOccurs="0" name="GetLaunchesResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

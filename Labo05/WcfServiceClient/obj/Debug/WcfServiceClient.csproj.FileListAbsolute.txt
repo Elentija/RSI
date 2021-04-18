@@ -7,7 +7,7 @@ C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\La
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceClient\bin\Debug\WcfServiceClient.exe.config
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceClient\bin\Debug\WcfServiceClient.exe
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceClient\bin\Debug\WcfServiceClient.pdb
-C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceClient\obj\Debug\WcfServiceClient.csprojAssemblyReference.cache
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceClient\obj\Debug\WcfServiceClient.csproj.CoreCompileInputs.cache
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceClient\obj\Debug\WcfServiceClient.exe
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceClient\obj\Debug\WcfServiceClient.pdb
+C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceClient\obj\Debug\WcfServiceClient.csprojAssemblyReference.cache

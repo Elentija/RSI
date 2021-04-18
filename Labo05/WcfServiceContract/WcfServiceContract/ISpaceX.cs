@@ -1,15 +1,18 @@
 ﻿using System.Net.Security;
 using System.ServiceModel;
+using System.Threading.Tasks;
 
 namespace WcfServiceContract
 {
     [ServiceContract(ProtectionLevel = ProtectionLevel.None)]
-    public interface IKalkulator
+    public interface ISpaceX
     {
         [OperationContract]
-        double Dodaj(double n1, double n2);
+        Task<string> GetCompanyInfo();
+
         [OperationContract]
-        double Odejmij(double n1, double n2);
+        Task<object> GetLaunches();
+
         [OperationContract]
         double Pomnoz(double n1, double n2);
 

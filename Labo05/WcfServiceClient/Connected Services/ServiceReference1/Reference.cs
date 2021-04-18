@@ -12,75 +12,75 @@ namespace WcfServiceClient.ServiceReference1 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IKalkulator")]
-    public interface IKalkulator {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.ISpaceX")]
+    public interface ISpaceX {
         
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IKalkulator/Dodaj", ReplyAction="http://tempuri.org/IKalkulator/DodajResponse")]
-        double Dodaj(double n1, double n2);
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/GetCompanyInfo", ReplyAction="http://tempuri.org/ISpaceX/GetCompanyInfoResponse")]
+        string GetCompanyInfo();
         
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IKalkulator/Dodaj", ReplyAction="http://tempuri.org/IKalkulator/DodajResponse")]
-        System.Threading.Tasks.Task<double> DodajAsync(double n1, double n2);
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/GetCompanyInfo", ReplyAction="http://tempuri.org/ISpaceX/GetCompanyInfoResponse")]
+        System.Threading.Tasks.Task<string> GetCompanyInfoAsync();
         
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IKalkulator/Odejmij", ReplyAction="http://tempuri.org/IKalkulator/OdejmijResponse")]
-        double Odejmij(double n1, double n2);
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/GetLaunches", ReplyAction="http://tempuri.org/ISpaceX/GetLaunchesResponse")]
+        string GetLaunches();
         
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IKalkulator/Odejmij", ReplyAction="http://tempuri.org/IKalkulator/OdejmijResponse")]
-        System.Threading.Tasks.Task<double> OdejmijAsync(double n1, double n2);
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/GetLaunches", ReplyAction="http://tempuri.org/ISpaceX/GetLaunchesResponse")]
+        System.Threading.Tasks.Task<string> GetLaunchesAsync();
         
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IKalkulator/Pomnoz", ReplyAction="http://tempuri.org/IKalkulator/PomnozResponse")]
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/Pomnoz", ReplyAction="http://tempuri.org/ISpaceX/PomnozResponse")]
         double Pomnoz(double n1, double n2);
         
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IKalkulator/Pomnoz", ReplyAction="http://tempuri.org/IKalkulator/PomnozResponse")]
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/Pomnoz", ReplyAction="http://tempuri.org/ISpaceX/PomnozResponse")]
         System.Threading.Tasks.Task<double> PomnozAsync(double n1, double n2);
         
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IKalkulator/Sumuj", ReplyAction="http://tempuri.org/IKalkulator/SumujResponse")]
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/Sumuj", ReplyAction="http://tempuri.org/ISpaceX/SumujResponse")]
         double Sumuj(double n1);
         
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IKalkulator/Sumuj", ReplyAction="http://tempuri.org/IKalkulator/SumujResponse")]
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/Sumuj", ReplyAction="http://tempuri.org/ISpaceX/SumujResponse")]
         System.Threading.Tasks.Task<double> SumujAsync(double n1);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IKalkulatorChannel : WcfServiceClient.ServiceReference1.IKalkulator, System.ServiceModel.IClientChannel {
+    public interface ISpaceXChannel : WcfServiceClient.ServiceReference1.ISpaceX, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class KalkulatorClient : System.ServiceModel.ClientBase<WcfServiceClient.ServiceReference1.IKalkulator>, WcfServiceClient.ServiceReference1.IKalkulator {
+    public partial class SpaceXClient : System.ServiceModel.ClientBase<WcfServiceClient.ServiceReference1.ISpaceX>, WcfServiceClient.ServiceReference1.ISpaceX {
         
-        public KalkulatorClient() {
+        public SpaceXClient() {
         }
         
-        public KalkulatorClient(string endpointConfigurationName) : 
+        public SpaceXClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public KalkulatorClient(string endpointConfigurationName, string remoteAddress) : 
+        public SpaceXClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public KalkulatorClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public SpaceXClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public KalkulatorClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public SpaceXClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
-        public double Dodaj(double n1, double n2) {
-            return base.Channel.Dodaj(n1, n2);
+        public string GetCompanyInfo() {
+            return base.Channel.GetCompanyInfo();
         }
         
-        public System.Threading.Tasks.Task<double> DodajAsync(double n1, double n2) {
-            return base.Channel.DodajAsync(n1, n2);
+        public System.Threading.Tasks.Task<string> GetCompanyInfoAsync() {
+            return base.Channel.GetCompanyInfoAsync();
         }
         
-        public double Odejmij(double n1, double n2) {
-            return base.Channel.Odejmij(n1, n2);
+        public string GetLaunches() {
+            return base.Channel.GetLaunches();
         }
         
-        public System.Threading.Tasks.Task<double> OdejmijAsync(double n1, double n2) {
-            return base.Channel.OdejmijAsync(n1, n2);
+        public System.Threading.Tasks.Task<string> GetLaunchesAsync() {
+            return base.Channel.GetLaunchesAsync();
         }
         
         public double Pomnoz(double n1, double n2) {

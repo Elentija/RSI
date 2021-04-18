@@ -7,7 +7,11 @@ C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\La
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\bin\Debug\WcfServiceContract.dll.config
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\bin\Debug\WcfServiceContract.dll
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\bin\Debug\WcfServiceContract.pdb
-C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\obj\Debug\WcfServiceContract.csprojAssemblyReference.cache
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\obj\Debug\WcfServiceContract.csproj.CoreCompileInputs.cache
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\obj\Debug\WcfServiceContract.dll
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\obj\Debug\WcfServiceContract.pdb
+C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\bin\Debug\Newtonsoft.Json.dll
+C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\bin\Debug\Newtonsoft.Json.xml
+C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\obj\Debug\WcfServiceContract.csproj.CopyComplete
+C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\bin\Debug\Nancy.dll
+C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceContract\WcfServiceContract\bin\Debug\Nancy.xml

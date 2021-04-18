@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MojKalkulator" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SpaceX" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsp:Policy wsu:Id="mojEndpoint3_policy">
     <wsp:ExactlyOne>
       <wsp:All>
@@ -95,7 +95,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="mojEndpoint3_Dodaj_Input_policy">
+  <wsp:Policy wsu:Id="mojEndpoint3_GetCompanyInfo_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -110,7 +110,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="mojEndpoint3_Dodaj_output_policy">
+  <wsp:Policy wsu:Id="mojEndpoint3_GetCompanyInfo_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -125,7 +125,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="mojEndpoint3_Odejmij_Input_policy">
+  <wsp:Policy wsu:Id="mojEndpoint3_GetLaunches_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -140,7 +140,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="mojEndpoint3_Odejmij_output_policy">
+  <wsp:Policy wsu:Id="mojEndpoint3_GetLaunches_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -215,7 +215,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_IKalkulator_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SymmetricBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -310,7 +310,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_IKalkulator_Dodaj_Input_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_GetCompanyInfo_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -325,7 +325,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_IKalkulator_Dodaj_output_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_GetCompanyInfo_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -340,7 +340,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_IKalkulator_Odejmij_Input_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_GetLaunches_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -355,7 +355,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_IKalkulator_Odejmij_output_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_GetLaunches_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -370,7 +370,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_IKalkulator_Pomnoz_Input_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_Pomnoz_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -385,7 +385,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_IKalkulator_Pomnoz_output_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_Pomnoz_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -400,7 +400,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_IKalkulator_Sumuj_Input_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_Sumuj_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -415,7 +415,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_IKalkulator_Sumuj_output_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_Sumuj_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -436,75 +436,75 @@
       <xsd:import schemaLocation="http://localhost:11115/mojkalkulator?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="IKalkulator_Dodaj_InputMessage">
-    <wsdl:part name="parameters" element="tns:Dodaj" />
+  <wsdl:message name="ISpaceX_GetCompanyInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompanyInfo" />
   </wsdl:message>
-  <wsdl:message name="IKalkulator_Dodaj_OutputMessage">
-    <wsdl:part name="parameters" element="tns:DodajResponse" />
+  <wsdl:message name="ISpaceX_GetCompanyInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompanyInfoResponse" />
   </wsdl:message>
-  <wsdl:message name="IKalkulator_Odejmij_InputMessage">
-    <wsdl:part name="parameters" element="tns:Odejmij" />
+  <wsdl:message name="ISpaceX_GetLaunches_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLaunches" />
   </wsdl:message>
-  <wsdl:message name="IKalkulator_Odejmij_OutputMessage">
-    <wsdl:part name="parameters" element="tns:OdejmijResponse" />
+  <wsdl:message name="ISpaceX_GetLaunches_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLaunchesResponse" />
   </wsdl:message>
-  <wsdl:message name="IKalkulator_Pomnoz_InputMessage">
+  <wsdl:message name="ISpaceX_Pomnoz_InputMessage">
     <wsdl:part name="parameters" element="tns:Pomnoz" />
   </wsdl:message>
-  <wsdl:message name="IKalkulator_Pomnoz_OutputMessage">
+  <wsdl:message name="ISpaceX_Pomnoz_OutputMessage">
     <wsdl:part name="parameters" element="tns:PomnozResponse" />
   </wsdl:message>
-  <wsdl:message name="IKalkulator_Sumuj_InputMessage">
+  <wsdl:message name="ISpaceX_Sumuj_InputMessage">
     <wsdl:part name="parameters" element="tns:Sumuj" />
   </wsdl:message>
-  <wsdl:message name="IKalkulator_Sumuj_OutputMessage">
+  <wsdl:message name="ISpaceX_Sumuj_OutputMessage">
     <wsdl:part name="parameters" element="tns:SumujResponse" />
   </wsdl:message>
-  <wsdl:portType name="IKalkulator">
-    <wsdl:operation name="Dodaj">
-      <wsdl:input wsaw:Action="http://tempuri.org/IKalkulator/Dodaj" message="tns:IKalkulator_Dodaj_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IKalkulator/DodajResponse" message="tns:IKalkulator_Dodaj_OutputMessage" />
+  <wsdl:portType name="ISpaceX">
+    <wsdl:operation name="GetCompanyInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISpaceX/GetCompanyInfo" message="tns:ISpaceX_GetCompanyInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISpaceX/GetCompanyInfoResponse" message="tns:ISpaceX_GetCompanyInfo_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="Odejmij">
-      <wsdl:input wsaw:Action="http://tempuri.org/IKalkulator/Odejmij" message="tns:IKalkulator_Odejmij_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IKalkulator/OdejmijResponse" message="tns:IKalkulator_Odejmij_OutputMessage" />
+    <wsdl:operation name="GetLaunches">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISpaceX/GetLaunches" message="tns:ISpaceX_GetLaunches_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISpaceX/GetLaunchesResponse" message="tns:ISpaceX_GetLaunches_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="Pomnoz">
-      <wsdl:input wsaw:Action="http://tempuri.org/IKalkulator/Pomnoz" message="tns:IKalkulator_Pomnoz_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IKalkulator/PomnozResponse" message="tns:IKalkulator_Pomnoz_OutputMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/ISpaceX/Pomnoz" message="tns:ISpaceX_Pomnoz_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISpaceX/PomnozResponse" message="tns:ISpaceX_Pomnoz_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="Sumuj">
-      <wsdl:input wsaw:Action="http://tempuri.org/IKalkulator/Sumuj" message="tns:IKalkulator_Sumuj_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IKalkulator/SumujResponse" message="tns:IKalkulator_Sumuj_OutputMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/ISpaceX/Sumuj" message="tns:ISpaceX_Sumuj_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISpaceX/SumujResponse" message="tns:ISpaceX_Sumuj_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
-  <wsdl:binding name="mojEndpoint3" type="tns:IKalkulator">
+  <wsdl:binding name="mojEndpoint3" type="tns:ISpaceX">
     <wsp:PolicyReference URI="#mojEndpoint3_policy" />
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="Dodaj">
-      <soap12:operation soapAction="http://tempuri.org/IKalkulator/Dodaj" style="document" />
+    <wsdl:operation name="GetCompanyInfo">
+      <soap12:operation soapAction="http://tempuri.org/ISpaceX/GetCompanyInfo" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#mojEndpoint3_Dodaj_Input_policy" />
+        <wsp:PolicyReference URI="#mojEndpoint3_GetCompanyInfo_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#mojEndpoint3_Dodaj_output_policy" />
+        <wsp:PolicyReference URI="#mojEndpoint3_GetCompanyInfo_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="Odejmij">
-      <soap12:operation soapAction="http://tempuri.org/IKalkulator/Odejmij" style="document" />
+    <wsdl:operation name="GetLaunches">
+      <soap12:operation soapAction="http://tempuri.org/ISpaceX/GetLaunches" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#mojEndpoint3_Odejmij_Input_policy" />
+        <wsp:PolicyReference URI="#mojEndpoint3_GetLaunches_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#mojEndpoint3_Odejmij_output_policy" />
+        <wsp:PolicyReference URI="#mojEndpoint3_GetLaunches_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="Pomnoz">
-      <soap12:operation soapAction="http://tempuri.org/IKalkulator/Pomnoz" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/ISpaceX/Pomnoz" style="document" />
       <wsdl:input>
         <wsp:PolicyReference URI="#mojEndpoint3_Pomnoz_Input_policy" />
         <soap12:body use="literal" />
@@ -515,7 +515,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="Sumuj">
-      <soap12:operation soapAction="http://tempuri.org/IKalkulator/Sumuj" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/ISpaceX/Sumuj" style="document" />
       <wsdl:input>
         <wsp:PolicyReference URI="#mojEndpoint3_Sumuj_Input_policy" />
         <soap12:body use="literal" />
@@ -526,58 +526,58 @@
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
-  <wsdl:binding name="WSHttpBinding_IKalkulator" type="tns:IKalkulator">
-    <wsp:PolicyReference URI="#WSHttpBinding_IKalkulator_policy" />
+  <wsdl:binding name="WSHttpBinding_ISpaceX" type="tns:ISpaceX">
+    <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_policy" />
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="Dodaj">
-      <soap12:operation soapAction="http://tempuri.org/IKalkulator/Dodaj" style="document" />
+    <wsdl:operation name="GetCompanyInfo">
+      <soap12:operation soapAction="http://tempuri.org/ISpaceX/GetCompanyInfo" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#WSHttpBinding_IKalkulator_Dodaj_Input_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_GetCompanyInfo_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#WSHttpBinding_IKalkulator_Dodaj_output_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_GetCompanyInfo_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="Odejmij">
-      <soap12:operation soapAction="http://tempuri.org/IKalkulator/Odejmij" style="document" />
+    <wsdl:operation name="GetLaunches">
+      <soap12:operation soapAction="http://tempuri.org/ISpaceX/GetLaunches" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#WSHttpBinding_IKalkulator_Odejmij_Input_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_GetLaunches_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#WSHttpBinding_IKalkulator_Odejmij_output_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_GetLaunches_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="Pomnoz">
-      <soap12:operation soapAction="http://tempuri.org/IKalkulator/Pomnoz" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/ISpaceX/Pomnoz" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#WSHttpBinding_IKalkulator_Pomnoz_Input_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_Pomnoz_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#WSHttpBinding_IKalkulator_Pomnoz_output_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_Pomnoz_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="Sumuj">
-      <soap12:operation soapAction="http://tempuri.org/IKalkulator/Sumuj" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/ISpaceX/Sumuj" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#WSHttpBinding_IKalkulator_Sumuj_Input_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_Sumuj_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#WSHttpBinding_IKalkulator_Sumuj_output_policy" />
+        <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_Sumuj_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
-  <wsdl:binding name="BasicHttpBinding_IKalkulator" type="tns:IKalkulator">
+  <wsdl:binding name="BasicHttpBinding_ISpaceX" type="tns:ISpaceX">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="Dodaj">
-      <soap:operation soapAction="http://tempuri.org/IKalkulator/Dodaj" style="document" />
+    <wsdl:operation name="GetCompanyInfo">
+      <soap:operation soapAction="http://tempuri.org/ISpaceX/GetCompanyInfo" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -585,8 +585,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="Odejmij">
-      <soap:operation soapAction="http://tempuri.org/IKalkulator/Odejmij" style="document" />
+    <wsdl:operation name="GetLaunches">
+      <soap:operation soapAction="http://tempuri.org/ISpaceX/GetLaunches" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -595,7 +595,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="Pomnoz">
-      <soap:operation soapAction="http://tempuri.org/IKalkulator/Pomnoz" style="document" />
+      <soap:operation soapAction="http://tempuri.org/ISpaceX/Pomnoz" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -604,7 +604,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="Sumuj">
-      <soap:operation soapAction="http://tempuri.org/IKalkulator/Sumuj" style="document" />
+      <soap:operation soapAction="http://tempuri.org/ISpaceX/Sumuj" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -613,7 +613,7 @@
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
-  <wsdl:service name="MojKalkulator">
+  <wsdl:service name="SpaceX">
     <wsdl:port name="mojEndpoint3" binding="tns:mojEndpoint3">
       <soap12:address location="http://localhost:11115/mojkalkulator/endpoint3" />
       <wsa10:EndpointReference>
@@ -623,7 +623,7 @@
         </Identity>
       </wsa10:EndpointReference>
     </wsdl:port>
-    <wsdl:port name="WSHttpBinding_IKalkulator" binding="tns:WSHttpBinding_IKalkulator">
+    <wsdl:port name="WSHttpBinding_ISpaceX" binding="tns:WSHttpBinding_ISpaceX">
       <soap12:address location="http://localhost:11115/mojkalkulator/endpoint1" />
       <wsa10:EndpointReference>
         <wsa10:Address>http://localhost:11115/mojkalkulator/endpoint1</wsa10:Address>
@@ -632,7 +632,7 @@
         </Identity>
       </wsa10:EndpointReference>
     </wsdl:port>
-    <wsdl:port name="BasicHttpBinding_IKalkulator" binding="tns:BasicHttpBinding_IKalkulator">
+    <wsdl:port name="BasicHttpBinding_ISpaceX" binding="tns:BasicHttpBinding_ISpaceX">
       <soap:address location="http://localhost:11115/mojkalkulator/endpoint2" />
     </wsdl:port>
   </wsdl:service>
