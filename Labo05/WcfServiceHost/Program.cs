@@ -17,11 +17,11 @@ namespace WcfServiceHost
             Uri baseAddress = new Uri("http://25.44.16.181:11115/mojkalkulator");
             // Krok 2 Utworz instancje serwisu.
             ServiceHost mojHost = new
-            ServiceHost(typeof(SpaceX), baseAddress);
+            ServiceHost(typeof(DbAction), baseAddress);
             // Krok 3 Dodaj endpoint.
             WSHttpBinding mojBanding = new WSHttpBinding();
             mojBanding.Security.Mode = SecurityMode.None;
-            mojHost.AddServiceEndpoint(typeof(ISpaceX),
+            mojHost.AddServiceEndpoint(typeof(IDbAction),
             mojBanding, "endpoint1");
             // Krok 4 Ustaw właczenie metadanych.
             ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
@@ -31,7 +31,7 @@ namespace WcfServiceHost
             {
                 BasicHttpBinding binding2 = new BasicHttpBinding();
                 ServiceEndpoint endpoint2 = mojHost.AddServiceEndpoint(
-                 typeof(ISpaceX), binding2, "endpoint2");
+                 typeof(IDbAction), binding2, "endpoint2");
                 ServiceEndpoint endpoint3 = mojHost.Description.Endpoints.Find(new Uri("http://25.44.16.181:11115/mojkalkulator/endpoint3"));
 
                 Console.WriteLine("\n---> Endpointy:");

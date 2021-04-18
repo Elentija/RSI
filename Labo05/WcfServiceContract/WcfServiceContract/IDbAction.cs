@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 namespace WcfServiceContract
 {
     [ServiceContract(ProtectionLevel = ProtectionLevel.None)]
-    public interface ISpaceX
+    public interface IDbAction
     {
         [OperationContract]
         Task<object> SaleBeetween2013_2014();

@@ -8,11 +8,10 @@ namespace WcfServiceClient
         static void Main(string[] args)
         {
             //Krok 1: Utworzenie instancji WCF proxy.
-            // KalkulatorClient mojKlient = new KalkulatorClient();
 
-            SpaceXClient klient1 = new SpaceXClient("WSHttpBinding_ISpaceX");
-            SpaceXClient klient2 = new SpaceXClient("BasicHttpBinding_ISpaceX");
-            SpaceXClient klient3 = new SpaceXClient("mojEndpoint3");
+            DbActionClient klient1 = new DbActionClient("WSHttpBinding_IDbAction");
+            DbActionClient klient2 = new DbActionClient("BasicHttpBinding_IDbAction");
+            DbActionClient klient3 = new DbActionClient("mojEndpoint3");
 
             // Krok 2: Wywolanie operacji uslugi.
             Console.WriteLine("Klient 1: ");

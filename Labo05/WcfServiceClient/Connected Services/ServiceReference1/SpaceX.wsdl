@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SpaceX" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DbAction" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsp:Policy wsu:Id="mojEndpoint3_policy">
     <wsp:ExactlyOne>
       <wsp:All>
@@ -185,7 +185,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="WSHttpBinding_ISpaceX_policy">
+  <wsp:Policy wsu:Id="WSHttpBinding_IDbAction_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <wsaw:UsingAddressing />
@@ -198,43 +198,43 @@
       <xsd:import schemaLocation="http://25.44.16.181:11115/mojkalkulator?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="ISpaceX_SaleBeetween2013_2014_InputMessage">
+  <wsdl:message name="IDbAction_SaleBeetween2013_2014_InputMessage">
     <wsdl:part name="parameters" element="tns:SaleBeetween2013_2014" />
   </wsdl:message>
-  <wsdl:message name="ISpaceX_SaleBeetween2013_2014_OutputMessage">
+  <wsdl:message name="IDbAction_SaleBeetween2013_2014_OutputMessage">
     <wsdl:part name="parameters" element="tns:SaleBeetween2013_2014Response" />
   </wsdl:message>
-  <wsdl:message name="ISpaceX_SumSaleInDay_InputMessage">
+  <wsdl:message name="IDbAction_SumSaleInDay_InputMessage">
     <wsdl:part name="parameters" element="tns:SumSaleInDay" />
   </wsdl:message>
-  <wsdl:message name="ISpaceX_SumSaleInDay_OutputMessage">
+  <wsdl:message name="IDbAction_SumSaleInDay_OutputMessage">
     <wsdl:part name="parameters" element="tns:SumSaleInDayResponse" />
   </wsdl:message>
-  <wsdl:message name="ISpaceX_NumberOfSoldProduct_InputMessage">
+  <wsdl:message name="IDbAction_NumberOfSoldProduct_InputMessage">
     <wsdl:part name="parameters" element="tns:NumberOfSoldProduct" />
   </wsdl:message>
-  <wsdl:message name="ISpaceX_NumberOfSoldProduct_OutputMessage">
+  <wsdl:message name="IDbAction_NumberOfSoldProduct_OutputMessage">
     <wsdl:part name="parameters" element="tns:NumberOfSoldProductResponse" />
   </wsdl:message>
-  <wsdl:portType name="ISpaceX">
+  <wsdl:portType name="IDbAction">
     <wsdl:operation name="SaleBeetween2013_2014">
-      <wsdl:input wsaw:Action="http://tempuri.org/ISpaceX/SaleBeetween2013_2014" message="tns:ISpaceX_SaleBeetween2013_2014_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ISpaceX/SaleBeetween2013_2014Response" message="tns:ISpaceX_SaleBeetween2013_2014_OutputMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IDbAction/SaleBeetween2013_2014" message="tns:IDbAction_SaleBeetween2013_2014_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDbAction/SaleBeetween2013_2014Response" message="tns:IDbAction_SaleBeetween2013_2014_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="SumSaleInDay">
-      <wsdl:input wsaw:Action="http://tempuri.org/ISpaceX/SumSaleInDay" message="tns:ISpaceX_SumSaleInDay_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ISpaceX/SumSaleInDayResponse" message="tns:ISpaceX_SumSaleInDay_OutputMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IDbAction/SumSaleInDay" message="tns:IDbAction_SumSaleInDay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDbAction/SumSaleInDayResponse" message="tns:IDbAction_SumSaleInDay_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="NumberOfSoldProduct">
-      <wsdl:input wsaw:Action="http://tempuri.org/ISpaceX/NumberOfSoldProduct" message="tns:ISpaceX_NumberOfSoldProduct_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ISpaceX/NumberOfSoldProductResponse" message="tns:ISpaceX_NumberOfSoldProduct_OutputMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IDbAction/NumberOfSoldProduct" message="tns:IDbAction_NumberOfSoldProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDbAction/NumberOfSoldProductResponse" message="tns:IDbAction_NumberOfSoldProduct_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
-  <wsdl:binding name="mojEndpoint3" type="tns:ISpaceX">
+  <wsdl:binding name="mojEndpoint3" type="tns:IDbAction">
     <wsp:PolicyReference URI="#mojEndpoint3_policy" />
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="SaleBeetween2013_2014">
-      <soap12:operation soapAction="http://tempuri.org/ISpaceX/SaleBeetween2013_2014" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/IDbAction/SaleBeetween2013_2014" style="document" />
       <wsdl:input>
         <wsp:PolicyReference URI="#mojEndpoint3_SaleBeetween2013_2014_Input_policy" />
         <soap12:body use="literal" />
@@ -245,7 +245,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="SumSaleInDay">
-      <soap12:operation soapAction="http://tempuri.org/ISpaceX/SumSaleInDay" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/IDbAction/SumSaleInDay" style="document" />
       <wsdl:input>
         <wsp:PolicyReference URI="#mojEndpoint3_SumSaleInDay_Input_policy" />
         <soap12:body use="literal" />
@@ -256,7 +256,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="NumberOfSoldProduct">
-      <soap12:operation soapAction="http://tempuri.org/ISpaceX/NumberOfSoldProduct" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/IDbAction/NumberOfSoldProduct" style="document" />
       <wsdl:input>
         <wsp:PolicyReference URI="#mojEndpoint3_NumberOfSoldProduct_Input_policy" />
         <soap12:body use="literal" />
@@ -267,11 +267,11 @@
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
-  <wsdl:binding name="WSHttpBinding_ISpaceX" type="tns:ISpaceX">
-    <wsp:PolicyReference URI="#WSHttpBinding_ISpaceX_policy" />
+  <wsdl:binding name="WSHttpBinding_IDbAction" type="tns:IDbAction">
+    <wsp:PolicyReference URI="#WSHttpBinding_IDbAction_policy" />
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="SaleBeetween2013_2014">
-      <soap12:operation soapAction="http://tempuri.org/ISpaceX/SaleBeetween2013_2014" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/IDbAction/SaleBeetween2013_2014" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -280,7 +280,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="SumSaleInDay">
-      <soap12:operation soapAction="http://tempuri.org/ISpaceX/SumSaleInDay" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/IDbAction/SumSaleInDay" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -289,7 +289,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="NumberOfSoldProduct">
-      <soap12:operation soapAction="http://tempuri.org/ISpaceX/NumberOfSoldProduct" style="document" />
+      <soap12:operation soapAction="http://tempuri.org/IDbAction/NumberOfSoldProduct" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -298,10 +298,10 @@
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
-  <wsdl:binding name="BasicHttpBinding_ISpaceX" type="tns:ISpaceX">
+  <wsdl:binding name="BasicHttpBinding_IDbAction" type="tns:IDbAction">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="SaleBeetween2013_2014">
-      <soap:operation soapAction="http://tempuri.org/ISpaceX/SaleBeetween2013_2014" style="document" />
+      <soap:operation soapAction="http://tempuri.org/IDbAction/SaleBeetween2013_2014" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -310,7 +310,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="SumSaleInDay">
-      <soap:operation soapAction="http://tempuri.org/ISpaceX/SumSaleInDay" style="document" />
+      <soap:operation soapAction="http://tempuri.org/IDbAction/SumSaleInDay" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -319,7 +319,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="NumberOfSoldProduct">
-      <soap:operation soapAction="http://tempuri.org/ISpaceX/NumberOfSoldProduct" style="document" />
+      <soap:operation soapAction="http://tempuri.org/IDbAction/NumberOfSoldProduct" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -328,7 +328,7 @@
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
-  <wsdl:service name="SpaceX">
+  <wsdl:service name="DbAction">
     <wsdl:port name="mojEndpoint3" binding="tns:mojEndpoint3">
       <soap12:address location="http://25.44.16.181:11115/mojkalkulator/endpoint3" />
       <wsa10:EndpointReference>
@@ -338,13 +338,13 @@
         </Identity>
       </wsa10:EndpointReference>
     </wsdl:port>
-    <wsdl:port name="WSHttpBinding_ISpaceX" binding="tns:WSHttpBinding_ISpaceX">
+    <wsdl:port name="WSHttpBinding_IDbAction" binding="tns:WSHttpBinding_IDbAction">
       <soap12:address location="http://25.44.16.181:11115/mojkalkulator/endpoint1" />
       <wsa10:EndpointReference>
         <wsa10:Address>http://25.44.16.181:11115/mojkalkulator/endpoint1</wsa10:Address>
       </wsa10:EndpointReference>
     </wsdl:port>
-    <wsdl:port name="BasicHttpBinding_ISpaceX" binding="tns:BasicHttpBinding_ISpaceX">
+    <wsdl:port name="BasicHttpBinding_IDbAction" binding="tns:BasicHttpBinding_IDbAction">
       <soap:address location="http://25.44.16.181:11115/mojkalkulator/endpoint2" />
     </wsdl:port>
   </wsdl:service>

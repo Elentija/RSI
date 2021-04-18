@@ -12,52 +12,52 @@ namespace WcfServiceClient.ServiceReference1 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.ISpaceX")]
-    public interface ISpaceX {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IDbAction")]
+    public interface IDbAction {
         
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/SaleBeetween2013_2014", ReplyAction="http://tempuri.org/ISpaceX/SaleBeetween2013_2014Response")]
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IDbAction/SaleBeetween2013_2014", ReplyAction="http://tempuri.org/IDbAction/SaleBeetween2013_2014Response")]
         object SaleBeetween2013_2014();
         
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/SaleBeetween2013_2014", ReplyAction="http://tempuri.org/ISpaceX/SaleBeetween2013_2014Response")]
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IDbAction/SaleBeetween2013_2014", ReplyAction="http://tempuri.org/IDbAction/SaleBeetween2013_2014Response")]
         System.Threading.Tasks.Task<object> SaleBeetween2013_2014Async();
         
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/SumSaleInDay", ReplyAction="http://tempuri.org/ISpaceX/SumSaleInDayResponse")]
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IDbAction/SumSaleInDay", ReplyAction="http://tempuri.org/IDbAction/SumSaleInDayResponse")]
         object SumSaleInDay(int d, int m, int y);
         
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/SumSaleInDay", ReplyAction="http://tempuri.org/ISpaceX/SumSaleInDayResponse")]
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IDbAction/SumSaleInDay", ReplyAction="http://tempuri.org/IDbAction/SumSaleInDayResponse")]
         System.Threading.Tasks.Task<object> SumSaleInDayAsync(int d, int m, int y);
         
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/NumberOfSoldProduct", ReplyAction="http://tempuri.org/ISpaceX/NumberOfSoldProductResponse")]
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IDbAction/NumberOfSoldProduct", ReplyAction="http://tempuri.org/IDbAction/NumberOfSoldProductResponse")]
         object NumberOfSoldProduct(string name, string lastname);
         
-        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/ISpaceX/NumberOfSoldProduct", ReplyAction="http://tempuri.org/ISpaceX/NumberOfSoldProductResponse")]
+        [System.ServiceModel.OperationContractAttribute(ProtectionLevel=System.Net.Security.ProtectionLevel.None, Action="http://tempuri.org/IDbAction/NumberOfSoldProduct", ReplyAction="http://tempuri.org/IDbAction/NumberOfSoldProductResponse")]
         System.Threading.Tasks.Task<object> NumberOfSoldProductAsync(string name, string lastname);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface ISpaceXChannel : WcfServiceClient.ServiceReference1.ISpaceX, System.ServiceModel.IClientChannel {
+    public interface IDbActionChannel : WcfServiceClient.ServiceReference1.IDbAction, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class SpaceXClient : System.ServiceModel.ClientBase<WcfServiceClient.ServiceReference1.ISpaceX>, WcfServiceClient.ServiceReference1.ISpaceX {
+    public partial class DbActionClient : System.ServiceModel.ClientBase<WcfServiceClient.ServiceReference1.IDbAction>, WcfServiceClient.ServiceReference1.IDbAction {
         
-        public SpaceXClient() {
+        public DbActionClient() {
         }
         
-        public SpaceXClient(string endpointConfigurationName) : 
+        public DbActionClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public SpaceXClient(string endpointConfigurationName, string remoteAddress) : 
+        public DbActionClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public SpaceXClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public DbActionClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public SpaceXClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public DbActionClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         

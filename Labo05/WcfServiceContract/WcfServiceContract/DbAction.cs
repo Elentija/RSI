@@ -12,9 +12,8 @@ namespace WcfServiceContract
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in both code and config file together.
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
-    public class SpaceX : ISpaceX
+    public class DbAction : IDbAction
     {
-       
         public async Task<object> SaleBeetween2013_2014()
         {
             string connetionString;

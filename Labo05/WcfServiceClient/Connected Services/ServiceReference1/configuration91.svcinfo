@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="mbBMfJj9tyrd1kmK8+cdqvWni1nbrLWQZdNEI5Afma0=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="YqEiN32ZAh961XH0h9rNy3wAJBaBL2jCi3Fbm5o8zyE=">
   <bindingConfigurations>
-    <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_ISpaceX">
+    <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_IDbAction">
       <properties>
         <property path="/name" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>BasicHttpBinding_ISpaceX</serializedValue>
+          <serializedValue>BasicHttpBinding_IDbAction</serializedValue>
         </property>
         <property path="/closeTimeout" isComplexType="false" isExplicitlyDefined="true" clrType="System.TimeSpan, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -823,10 +823,10 @@
         </property>
       </properties>
     </bindingConfiguration>
-    <bindingConfiguration bindingType="wsHttpBinding" name="WSHttpBinding_ISpaceX">
+    <bindingConfiguration bindingType="wsHttpBinding" name="WSHttpBinding_IDbAction">
       <properties>
         <property path="/name" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>WSHttpBinding_ISpaceX</serializedValue>
+          <serializedValue>WSHttpBinding_IDbAction</serializedValue>
         </property>
         <property path="/closeTimeout" isComplexType="false" isExplicitlyDefined="true" clrType="System.TimeSpan, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -949,7 +949,7 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="mojEndpoint3" contract="ServiceReference1.ISpaceX" bindingType="customBinding" address="http://25.44.16.181:11115/mojkalkulator/endpoint3" bindingConfiguration="mojEndpoint3">
+    <endpoint name="mojEndpoint3" contract="ServiceReference1.IDbAction" bindingType="customBinding" address="http://25.44.16.181:11115/mojkalkulator/endpoint3" bindingConfiguration="mojEndpoint3">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>http://25.44.16.181:11115/mojkalkulator/endpoint3</serializedValue>
@@ -964,7 +964,7 @@
           <serializedValue>mojEndpoint3</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>ServiceReference1.ISpaceX</serializedValue>
+          <serializedValue>ServiceReference1.IDbAction</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>
@@ -1034,7 +1034,7 @@
         </property>
       </properties>
     </endpoint>
-    <endpoint name="WSHttpBinding_ISpaceX" contract="ServiceReference1.ISpaceX" bindingType="wsHttpBinding" address="http://25.44.16.181:11115/mojkalkulator/endpoint1" bindingConfiguration="WSHttpBinding_ISpaceX">
+    <endpoint name="WSHttpBinding_IDbAction" contract="ServiceReference1.IDbAction" bindingType="wsHttpBinding" address="http://25.44.16.181:11115/mojkalkulator/endpoint1" bindingConfiguration="WSHttpBinding_IDbAction">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>http://25.44.16.181:11115/mojkalkulator/endpoint1</serializedValue>
@@ -1046,10 +1046,10 @@
           <serializedValue>wsHttpBinding</serializedValue>
         </property>
         <property path="/bindingConfiguration" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>WSHttpBinding_ISpaceX</serializedValue>
+          <serializedValue>WSHttpBinding_IDbAction</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>ServiceReference1.ISpaceX</serializedValue>
+          <serializedValue>ServiceReference1.IDbAction</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>
@@ -1109,7 +1109,7 @@
           <serializedValue>False</serializedValue>
         </property>
         <property path="/name" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>WSHttpBinding_ISpaceX</serializedValue>
+          <serializedValue>WSHttpBinding_IDbAction</serializedValue>
         </property>
         <property path="/kind" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -1119,7 +1119,7 @@
         </property>
       </properties>
     </endpoint>
-    <endpoint name="BasicHttpBinding_ISpaceX" contract="ServiceReference1.ISpaceX" bindingType="basicHttpBinding" address="http://25.44.16.181:11115/mojkalkulator/endpoint2" bindingConfiguration="BasicHttpBinding_ISpaceX">
+    <endpoint name="BasicHttpBinding_IDbAction" contract="ServiceReference1.IDbAction" bindingType="basicHttpBinding" address="http://25.44.16.181:11115/mojkalkulator/endpoint2" bindingConfiguration="BasicHttpBinding_IDbAction">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>http://25.44.16.181:11115/mojkalkulator/endpoint2</serializedValue>
@@ -1131,10 +1131,10 @@
           <serializedValue>basicHttpBinding</serializedValue>
         </property>
         <property path="/bindingConfiguration" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>BasicHttpBinding_ISpaceX</serializedValue>
+          <serializedValue>BasicHttpBinding_IDbAction</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>ServiceReference1.ISpaceX</serializedValue>
+          <serializedValue>ServiceReference1.IDbAction</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>
@@ -1194,7 +1194,7 @@
           <serializedValue>False</serializedValue>
         </property>
         <property path="/name" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>BasicHttpBinding_ISpaceX</serializedValue>
+          <serializedValue>BasicHttpBinding_IDbAction</serializedValue>
         </property>
         <property path="/kind" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
