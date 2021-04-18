@@ -10,4 +10,3 @@ C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RS
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceClient\obj\Debug\WcfServiceClient.csproj.CoreCompileInputs.cache
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceClient\obj\Debug\WcfServiceClient.exe
 C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceClient\obj\Debug\WcfServiceClient.pdb
-C:\Users\horni\OneDrive - Politechnika Wroclawska\Daria\studia\Semestr VI\RSI\RSI-2021\Labo05\WcfServiceClient\obj\Debug\WcfServiceClient.csprojAssemblyReference.cache

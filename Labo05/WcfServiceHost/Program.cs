@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.ServiceModel;
 using System.ServiceModel.Description;
 using System.Text;
 using System.Threading.Tasks;
 using WcfServiceContract;
+using static System.Console;
+
 
 namespace WcfServiceHost
 {
@@ -13,6 +16,15 @@ namespace WcfServiceHost
     {
         static void Main(string[] args)
         {
+            WriteLine(".Net 5.0");
+            WriteLine("Daria Hornik, 246700");
+            WriteLine("Kamil Graczyk, 246994");
+            WriteLine(Environment.MachineName);
+            WriteLine(Environment.UserName);
+            DateTime thisDay = DateTime.Now;
+            WriteLine(thisDay.ToString());
+            GetLocalIPAddress();
+
             // Krok 1 Utworz URI dla bazowego adresu serwisu.
             Uri baseAddress = new Uri("http://25.44.16.181:11115/mojkalkulator");
             // Krok 2 Utworz instancje serwisu.
@@ -55,6 +67,15 @@ namespace WcfServiceHost
             {
                 Console.WriteLine("Wystapil wyjatek: {0}", ce.Message);
                 mojHost.Abort();
+            }
+        }
+
+        public static void GetLocalIPAddress()
+        {
+            var host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (var ip in host.AddressList)
+            {
+                WriteLine(ip);
             }
         }
     }

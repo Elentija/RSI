@@ -38,7 +38,6 @@ namespace WcfServiceContract
                 output += dataReader.GetValue(0) + " - " + dataReader.GetValue(1) + " - " + dataReader.GetValue(2) + " - " + dataReader.GetValue(3) +" zł" + "\n";
             }
             Console.WriteLine("Metoda 1");
-            Console.WriteLine(output);
             cnn.Close();
             return output;
         }
@@ -63,7 +62,7 @@ namespace WcfServiceContract
 
             while (dataReader.Read())
             {
-                output += "Dzień" +dataReader.GetValue(0) + " - Miesiąc: " + dataReader.GetValue(1) + " - Rok: " + dataReader.GetValue(2) + " - Wartość: " + dataReader.GetValue(3) + " zł" + "\n";
+                output += "Dzień: " +dataReader.GetValue(0) + " - Miesiąc: " + dataReader.GetValue(1) + " - Rok: " + dataReader.GetValue(2) + " - Wartość: " + dataReader.GetValue(3) + " zł" + "\n";
             }
             Console.WriteLine("Metoda 2");
             cnn.Close();
@@ -98,7 +97,6 @@ namespace WcfServiceContract
                 output += dataReader.GetValue(0) + " - " + dataReader.GetValue(1) + " sztuk" + "\n";
             }
             Console.WriteLine("Metoda 3");
-            Console.WriteLine(output);
             cnn.Close();
             return output;
         }
