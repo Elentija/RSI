@@ -13,23 +13,26 @@ namespace Labo6
     public interface IRestService
     {
         [OperationContract]
-        [WebGet(UriTemplate = "/employee")]
+        [WebGet(UriTemplate = "/employee",
+        ResponseFormat = WebMessageFormat.Xml)]
         List<Employee> getAllXml();
         [OperationContract]
         [WebGet(UriTemplate = "/employee/{id}",
-        ResponseFormat = WebMessageFormat.Json)]
+        ResponseFormat = WebMessageFormat.Xml)]
         Employee getByIdXml(string Id);
         [OperationContract]
         [WebInvoke(UriTemplate = "/employee",
         Method = "POST",
-        RequestFormat = WebMessageFormat.Json)]
+        RequestFormat = WebMessageFormat.Xml)]
         string addXml(Employee item);
         [OperationContract]
-        [WebInvoke(UriTemplate = "/employee/{id}/delete", Method = "DELETE")]
+        [WebInvoke(UriTemplate = "/employee/{id}/delete", Method = "DELETE",
+        ResponseFormat = WebMessageFormat.Xml)]
         string deleteXml(string Id);
 
         [OperationContract]
-        [WebGet(UriTemplate = "/json/employee")]
+        [WebGet(UriTemplate = "/json/employee",
+        ResponseFormat = WebMessageFormat.Json)]
         List<Employee> getAllJson();
         [OperationContract]
         [WebGet(UriTemplate = "/json/employee/{id}",
@@ -41,7 +44,8 @@ namespace Labo6
         RequestFormat = WebMessageFormat.Json)]
         string addJson(Employee item);
         [OperationContract]
-        [WebInvoke(UriTemplate = "/json/employee/{id}/delete", Method = "DELETE")]
+        [WebInvoke(UriTemplate = "/json/employee/{id}/delete", Method = "DELETE",
+        ResponseFormat = WebMessageFormat.Json)]
         string deleteJson(string Id);
     }
 

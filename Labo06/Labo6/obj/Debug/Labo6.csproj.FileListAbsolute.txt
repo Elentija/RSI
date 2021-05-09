@@ -1,0 +1,9 @@
+C:\Users\kogol\source\repos\Labo6\Labo6\bin\Labo6.dll.config
+C:\Users\kogol\source\repos\Labo6\Labo6\bin\Labo6.dll
+C:\Users\kogol\source\repos\Labo6\Labo6\bin\Labo6.pdb
+C:\Users\kogol\source\repos\Labo6\Labo6\obj\Debug\Labo6.csprojAssemblyReference.cache
+C:\Users\kogol\source\repos\Labo6\Labo6\obj\Debug\Labo6.csproj.CoreCompileInputs.cache
+C:\Users\kogol\source\repos\Labo6\Labo6\obj\Debug\Labo6.dll
+C:\Users\kogol\source\repos\Labo6\Labo6\obj\Debug\Labo6.pdb
+C:\Users\kogol\source\repos\Labo6\Labo6\obj\Debug\Labo6.Properties.Resources.resources
+C:\Users\kogol\source\repos\Labo6\Labo6\obj\Debug\Labo6.csproj.GenerateResource.cache
