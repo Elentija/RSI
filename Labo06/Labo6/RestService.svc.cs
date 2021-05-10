@@ -183,6 +183,38 @@ namespace Labo6
                 HttpStatusCode.Conflict);
         }
 
+        public string updateXml(Employee item)
+        {
+            getAllXml();
+            if (item == null)
+                throw new WebFaultException<string>("400: BadRequest",
+                HttpStatusCode.BadRequest);
+            int idx = EmployeeList.FindIndex(b => b.Id == item.Id);
+            if (idx != -1)
+            {
+                string connetionString;
+                SqlConnection cnn;
+                connetionString = @"Data Source=DESKTOP-IN8O3LQ;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+                cnn = new SqlConnection(connetionString);
+                cnn.Open();
+
+                SqlCommand command;
+                SqlDataReader dataReader;
+                String sql, output = "";
+                sql = @"UPDATE AdventureWorks2019.dbo.EmployeeDB
+                        SET FirstName = '" + item.FirstName + "', LastName = '" + item.LastName + "', JobTitle = '" + item.JobTitle + "', VacationHours = " + item.VacationHours +
+                        "WHERE BusinessEntityID = " + item.Id + ";";
+                command = new SqlCommand(sql, cnn);
+                command.ExecuteNonQuery();
+                cnn.Close();
+                EmployeeList.Add(item);
+                return "Updated item with ID=" + item.Id;
+            }
+            else
+                throw new WebFaultException<string>("409: Conflict",
+                HttpStatusCode.Conflict);
+        }
+
         public string deleteXml(string Id)
         {
             getAllXml();
@@ -309,6 +341,38 @@ namespace Labo6
             cnn.Close();
             EmployeeList.RemoveAt(idx);
             return "Deleted item with ID= " + Id.ToString();
+        }
+
+        public string updateJson(Employee item)
+        {
+            getAllXml();
+            if (item == null)
+                throw new WebFaultException<string>("400: BadRequest",
+                HttpStatusCode.BadRequest);
+            int idx = EmployeeList.FindIndex(b => b.Id == item.Id);
+            if (idx != -1)
+            {
+                string connetionString;
+                SqlConnection cnn;
+                connetionString = @"Data Source=DESKTOP-IN8O3LQ;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+                cnn = new SqlConnection(connetionString);
+                cnn.Open();
+
+                SqlCommand command;
+                SqlDataReader dataReader;
+                String sql, output = "";
+                sql = @"UPDATE AdventureWorks2019.dbo.EmployeeDB
+                        SET FirstName = '" + item.FirstName + "', LastName = '" + item.LastName + "', JobTitle = '" + item.JobTitle + "', VacationHours = " + item.VacationHours +
+                        "WHERE BusinessEntityID = " + item.Id + ";";
+                command = new SqlCommand(sql, cnn);
+                command.ExecuteNonQuery();
+                cnn.Close();
+                EmployeeList.Add(item);
+                return "Updated item with ID=" + item.Id;
+            }
+            else
+                throw new WebFaultException<string>("409: Conflict",
+                HttpStatusCode.Conflict);
         }
     }
 }

@@ -29,6 +29,11 @@ namespace Labo6
         [WebInvoke(UriTemplate = "/employee/{id}/delete", Method = "DELETE",
         ResponseFormat = WebMessageFormat.Xml)]
         string deleteXml(string Id);
+        [OperationContract]
+        [WebInvoke(UriTemplate = "/employee/modify",
+        Method = "POST",
+        RequestFormat = WebMessageFormat.Xml)]
+        string updateXml(Employee item);
 
         [OperationContract]
         [WebGet(UriTemplate = "/json/employee",
@@ -47,6 +52,11 @@ namespace Labo6
         [WebInvoke(UriTemplate = "/json/employee/{id}/delete", Method = "DELETE",
         ResponseFormat = WebMessageFormat.Json)]
         string deleteJson(string Id);
+        [OperationContract]
+        [WebInvoke(UriTemplate = "json/employee/modify",
+        Method = "POST",
+        RequestFormat = WebMessageFormat.Json)]
+        string updateJson(Employee item);
     }
 
 
