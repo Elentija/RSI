@@ -10,103 +10,15 @@ using System.Text;
 
 namespace Labo6
 {
-    // UWAGA: możesz użyć polecenia „Zmień nazwę” w menu „Refaktoryzuj”, aby zmienić nazwę klasy „Service1” w kodzie, usłudze i pliku konfiguracji.
-    // UWAGA: aby uruchomić klienta testowego WCF w celu przetestowania tej usługi, wybierz plik Service1.svc lub Service1.svc.cs w eksploratorze rozwiązań i rozpocznij debugowanie.
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
     public class RestService : IRestService
     {
         /*
-        private static List<Car> CarList = new List<Car>() {
-            new Car {Id=0,Mark="VW",Model="Tiguan",HorsePower=250},
-            new Car {Id=1,Mark="Cupra",Model="Formentor",HorsePower=310},
-            new Car {Id=2,Mark="Mini",Model="One",HorsePower=75}
-        };
-
-        public List<Car> getAllXml()
-        {
-            return CarList;
-        }
-
-        public Car getByIdXml(string Id)
-        {
-            int intId = int.Parse(Id);
-            int idx = CarList.FindIndex(b => b.Id == intId);
-            if (idx == -1)
-                throw new WebFaultException<string>("404: Not Found",
-                HttpStatusCode.NotFound);
-            return CarList.ElementAt(idx);
-        }
-
-        public string addXml(Car item)
-        {
-            if (item == null)
-                throw new WebFaultException<string>("400: BadRequest",
-                HttpStatusCode.BadRequest);
-            int idx = CarList.FindIndex(b => b.Id == item.Id);
-            if (idx == -1)
-            {
-                CarList.Add(item);
-                return "Added item with ID=" + item.Id;
-            }
-            else
-                throw new WebFaultException<string>("409: Conflict",
-                HttpStatusCode.Conflict);
-        }
-
-        public string deleteXml(string Id)
-        {
-            int intId = int.Parse(Id);
-            int idx = CarList.FindIndex(b => b.Id == intId);
-            if (idx == -1)
-                throw new WebFaultException<string>("404: Not Found",
-                HttpStatusCode.NotFound);
-            CarList.RemoveAt(idx);
-            return "Deleted item with ID= " + Id.ToString();
-        }
-
-
-        public List<Car> getAllJson()
-        {
-            return CarList;
-        }
-
-        public Car getByIdJson(string Id)
-        {
-            int intId = int.Parse(Id);
-            int idx = CarList.FindIndex(b => b.Id == intId);
-            if (idx == -1)
-                throw new WebFaultException<string>("404: Not Found",
-                HttpStatusCode.NotFound);
-            return CarList.ElementAt(idx);
-        }
-
-        public string addJson(Car item)
-        {
-            if (item == null)
-                throw new WebFaultException<string>("400: BadRequest",
-                HttpStatusCode.BadRequest);
-            int idx = CarList.FindIndex(b => b.Id == item.Id);
-            if (idx == -1)
-            {
-                CarList.Add(item);
-                return "Added item with ID=" + item.Id;
-            }
-            else
-                throw new WebFaultException<string>("409: Conflict",
-                HttpStatusCode.Conflict);
-        }
-
-        public string deleteJson(string Id)
-        {
-            int intId = int.Parse(Id);
-            int idx = CarList.FindIndex(b => b.Id == intId);
-            if (idx == -1)
-                throw new WebFaultException<string>("404: Not Found",
-                HttpStatusCode.NotFound);
-            CarList.RemoveAt(intId);
-            return "Deleted item with ID= " + Id.ToString();
-        }
-        */
+         * Console.WriteLine("Daria Hornik, 246700");
+         * Console.WriteLine("Kamil Graczyk, 246994");
+         * Console.WriteLine(DateTime.Now);
+         * Console.WriteLine(Environment.MachineName + "\n");
+         */
 
         private static List<Employee> EmployeeList = new List<Employee>();
 

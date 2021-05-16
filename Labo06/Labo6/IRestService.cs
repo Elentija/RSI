@@ -8,7 +8,6 @@ using System.Text;
 
 namespace Labo6
 {
-    // UWAGA: możesz użyć polecenia „Zmień nazwę” w menu „Refaktoryzuj”, aby zmienić nazwę interfejsu „IRestService” w kodzie i pliku konfiguracji.
     [ServiceContract]
     public interface IRestService
     {
@@ -31,7 +30,7 @@ namespace Labo6
         string deleteXml(string Id);
         [OperationContract]
         [WebInvoke(UriTemplate = "/employee/modify",
-        Method = "POST",
+        Method = "PUT",
         RequestFormat = WebMessageFormat.Xml)]
         string updateXml(Employee item);
 
@@ -54,14 +53,11 @@ namespace Labo6
         string deleteJson(string Id);
         [OperationContract]
         [WebInvoke(UriTemplate = "json/employee/modify",
-        Method = "POST",
+        Method = "PUT",
         RequestFormat = WebMessageFormat.Json)]
         string updateJson(Employee item);
     }
 
-
-
-    // Użyj kontraktu danych, jak pokazano w poniższym przykładzie, aby dodać typy złożone do operacji usługi.
     [DataContract]
     public class Employee
     {

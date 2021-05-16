@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Ten plik jest wykorzystywany przez proces publikowania/pakowania projektu internetowego. Możesz dostosować zachowanie tego procesu
+ poprzez edycję tego pliku MSBuild. Aby dowiedzieć się więcej o tym działaniu, odwiedź stronę https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUMq+KI9sDUuFoMBMoMu3hAAAAAACAAAAAAAQZgAAAAEAACAAAACP2wE0vBE5vFXNWfGYijHvb6TCDBXS1k70yfu5W0WXKAAAAAAOgAAAAAIAACAAAADmy7A63knpWTBnjuDjXvWEGqhxoP9iJBiBSi4tOOzOETAAAABR0CFCsrd9YDQECpBRVlqodH+8RA7p4ReNLLUZh8sZxp2EDUXt9q8HCVngAN1VJddAAAAAIj0NnmEPavKT5Jpl5bhiI7eM1tZRCbvItJhNw9F8yAROpUOw1uMjdCTmV1S80wgGBwCHqE+shSdTIQ3o481Fzg==</EncryptedPassword>
+    <_PublishTargetUrl>ftp://s69.hekko.pl/dotNet</_PublishTargetUrl>
+    <History>True|2021-05-16T20:24:45.3521600Z;True|2021-05-16T22:22:52.3055200+02:00;True|2021-05-16T22:21:55.4543535+02:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Labo6.dll">
+      <publishTime>05/16/2021 22:24:38</publishTime>
+    </File>
+    <File Include="bin/Labo6.pdb">
+      <publishTime>05/16/2021 22:24:38</publishTime>
+    </File>
+    <File Include="RestService.svc">
+      <publishTime>05/08/2021 22:28:46</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/16/2021 22:21:52</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
