@@ -40,14 +40,16 @@ namespace WcfRestClient
 
         static void Main(string[] args)
         {
+            Console.WriteLine("Daria Hornik, 246700");
+            Console.WriteLine("Kamil Graczyk, 246994");
+            Console.WriteLine(DateTime.Now);
+            Console.WriteLine(Environment.MachineName + "\n");
+            WriteLine("Podaj URL Serwisu:");
+            string url = ReadLine();
             do
             {
                 try
                 {
-                    WriteLine("Podaj URL Serwisu:");
-                    string url = ReadLine();
-                    
-
                     WriteLine("Dostępne opcje (podaj nazwe):");
                     WriteLine("1. - CREATE - dodawanie nowej ksiazki");
                     WriteLine("2. - READ - sprawdzanie danych na temat ksiazki");
@@ -95,12 +97,6 @@ namespace WcfRestClient
                             }
                             req.KeepAlive = false;
                             req.Method = "GET";
-                            if (format.ToLower() == "xml")
-                                req.ContentType = "text/xml";
-                            else 
-                            {
-                                req.ContentType = "application/json";
-                            };
                             break;
                         case "CREATE":
                             if (format.ToLower() == "xml")
@@ -115,6 +111,8 @@ namespace WcfRestClient
                                 req = WebRequest.Create(uri) as HttpWebRequest;
                                 req.ContentType = "application/json";
                             };
+                            req.KeepAlive = false;
+                            req.Method = "POST";
                             req.Credentials = new NetworkCredential("username", "password");
                             WriteLine("Wklej zawartosc XML-a lub JSON-a (w jednej linii !)");
                             string dane = ReadLine();
@@ -125,14 +123,7 @@ namespace WcfRestClient
                             postData.Write(bufor, 0, bufor.Length);
                             postData.Close();
 
-                            req.KeepAlive = false;
-                            req.Method = "POST";
-                            if (format.ToLower() == "xml")
-                                req.ContentType = "text/xml";
-                            else
-                            {
-                                req.ContentType = "application/json";
-                            };
+                            
                             break;
                         case "UPDATE":
                             WriteLine("Podaj id interesującej ksiązki do zmiany: ");
@@ -183,7 +174,7 @@ namespace WcfRestClient
                             req = WebRequest.Create(url) as HttpWebRequest;
                             break;
                     }
-
+                    
                     HttpWebResponse resp = req.GetResponse() as HttpWebResponse;
                     Encoding enc = System.Text.Encoding.GetEncoding(1252);
                     StreamReader responseStream = new StreamReader(resp.GetResponseStream(), enc);
@@ -196,6 +187,7 @@ namespace WcfRestClient
                     } 
                     else
                     {
+                        WriteLine(responseString);
                         WriteLine(JsonTextSerializer(responseString));
                     }
                 }
