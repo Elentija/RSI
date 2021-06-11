@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\horni\Downloads\06-Hornik-Daria\Labo6\Labo6\bin\Release\app.publish\</_PublishTargetUrl>
+    <History>True|2021-05-23T20:29:26.4658224Z;True|2021-05-23T21:42:29.0065420+02:00;True|2021-05-23T21:40:24.6756106+02:00;True|2021-05-23T21:25:27.6728233+02:00;True|2021-05-23T21:08:31.7428510+02:00;True|2021-05-23T20:48:14.1705881+02:00;True|2021-05-23T20:29:14.6206291+02:00;True|2021-05-22T19:00:50.1925034+02:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Labo6.dll">
+      <publishTime>05/23/2021 22:29:25</publishTime>
+    </File>
+    <File Include="bin/Labo6.pdb">
+      <publishTime>05/23/2021 22:29:25</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/22/2021 15:42:53</publishTime>
+    </File>
+    <File Include="RestService.svc">
+      <publishTime>05/22/2021 15:34:35</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/23/2021 22:29:26</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

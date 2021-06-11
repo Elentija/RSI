@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX Client</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<script type="text/javascript">
+		function deleteEmployee() {
+				var empId = $("#EmployeeId").val();
+				console.log(empId);
+				$.ajax({
+					type: "DELETE",
+					url: "http://inet29.wega0.net.ii.pwr.wroc.pl/RestService.svc/json/employee/" + empId +"/delete",
+					contentType: "application/json; charset=utf-8",
+					dataType: "json",
+					success: function (msg) {
+						getAll();
+						alert("Employee removed")
+					},
+					error: function(error) {
+						alert(error.statusText)
+					}
+				})
+			}
+
+		function getAll() {
+				$.ajax({
+					type: "GET",
+					url: "http://inet29.wega0.net.ii.pwr.wroc.pl/RestService.svc/json/employee",
+					contentType: "application/json; charset=utf-8",
+					dataType: "json",
+					success: function (msg) {
+						$("#allEmployees tbody").remove();
+						$.each(msg, function (id, employee1) {
+							if ($("#allEmployees tbody").length == 0) {
+								$("#allEmployees").append("<tbody></tbody>");
+							}
+							
+							$("#allEmployees tbody").append(
+								"<tr>" +
+									"<td>" + employee1.Id + "</td>"+
+									"<td>" + employee1.FirstName + "</td>"+
+									"<td>" + employee1.LastName + "</td>"+
+									"<td>" + employee1.JobTitle + "</td>"+
+									"<td>" + employee1.VacationHours + "</td>"+
+								"</tr>"
+							);
+						});
+					},
+					error: function (error) {
+						alert(error.statusText)
+					}				
+				})
+			}
+
+		function getEmployee(){
+			var employeeId = $("#EmployeeId").val();
+
+			$.ajax({
+				type: "GET",
+				url: "http://inet29.wega0.net.ii.pwr.wroc.pl/RestService.svc/json/employee/" + employeeId,
+				contentType: "application/json; charset=utf-8",
+				dataType: "json",
+				success: function (msg) {
+					alert("Znaleziono: "+ msg.Id +": " + msg.LastName +" " + msg.FirstName +" " + msg.JobTitle +", wakacje: " + msg.VacationHours);
+				},
+				error: function (error) {
+					alert(error.status)
+				}
+			})
+		}
+
+		function addEmployee() {
+				var employee = {
+					Id: $("#EmployeeId").val(),
+					FirstName: $("#FirstName").val(),
+					LastName: $("#LastName").val(),
+					JobTitle: $("#JobTitle").val(),
+					VacationHours: $("#VacationHours").val()	
+				}
+
+				$.ajax({
+					type: "POST",
+					url: "http://inet29.wega0.net.ii.pwr.wroc.pl/RestService.svc/json/employee",
+					data: JSON.stringify(employee),
+					contentType: "application/json; charset=utf-8",
+					dataType: "json",
+					success: function (msg) {
+						getAll();
+						alert("Employee added")
+					},
+					error: function(error) {
+						alert(error.statusText)
+					}
+				});
+		}
+	
+		function updateEmployee() {
+				var employee = {
+					Id: $("#EmployeeId").val(),
+					FirstName: $("#FirstName").val(),
+					LastName: $("#LastName").val(),
+					JobTitle: $("#JobTitle").val(),
+					VacationHours: $("#VacationHours").val()	
+				}
+
+				$.ajax({
+					type: "POST",
+					url: "http://inet29.wega0.net.ii.pwr.wroc.pl/RestService.svc/json/employee/modify",
+					data: JSON.stringify(employee),
+					contentType: "application/json; charset=utf-8",
+					dataType: "json",
+					success: function (msg) {
+						alert("Employee updated")
+					},
+					error: function(error) {
+						alert(error.statusText)
+					}
+				});
+		}	
+	</script>
+</head>
+
+<body>
+	<h2><span>Daria Hornik - 246700 i Kamil Graczyk - 246994</span></h2>
+	<hr/>
+	<br/>
+
+	<form>
+	<table class="table">
+
+		<tr>
+			<button style="float: right; margin: 10px;" type="button" onclick="addEmployee()">Add</button>
+			<button style="float: right; margin: 10px;" type="button" onclick="getAll()">Reset</button>
+		</tr>
+
+	<tr>
+		<td>Id</td>
+		<td>First name</td>
+		<td>Last name</td>
+		<td>Job title</td>
+		<td>Vacation hours</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><input id="EmployeeId" type="text"/></td>
+		<td><input id="FirstName" type="text"/></td>
+		<td><input id="LastName" type="text"/></td>
+		<td><input id="JobTitle" type="text"/></td>
+		<td><input id="VacationHours" type="number"/></td>
+		<td>
+			<button type="button" onclick="getEmployee()">Find</button>
+			<button type="button" onclick="updateEmployee()">Update</button>
+			<button type="button" onclick="deleteEmployee()">Delete</button>
+		</td>
+	</tr>
+	</table>
+
+</form>
+<br/>
+<br/>
+
+
+	<h2>All employees</h2>
+	<table class="table" id="allEmployees">
+		<thead>
+		<tr>
+			<td>Id</td>
+			<td>First name</td>
+			<td>Last name</td>
+			<td>Job title</td>
+			<td>Vacation hours</td>
+			<td></td>
+			</tr>
+		</thead>
+	</table>	
+</body>
+</html>
